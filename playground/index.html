@@ -1,0 +1,973 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Style Playground</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.css">
+<style>
+  :root { --bg:#fff; --fg:#222; --ok:#1e8e3e; --bad:#c62828; --muted:#777; --panel:rgba(255,255,255,.96); }
+  @media (prefers-color-scheme: dark) { :root { --bg:#1e1e1e; --fg:#eee; --muted:#aaa; --panel:rgba(30,30,30,.96); } }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--fg);
+    font: 13px/1.4 system-ui, sans-serif; }
+  #map { position:absolute; inset:0; }
+  #hud { position:absolute; top:10px; left:10px; right:60px; z-index:3; display:flex; flex-direction:column; gap:6px; pointer-events:none; }
+  .row { display:flex; gap:6px; flex-wrap:wrap; align-items:center; }
+  .row > * { pointer-events:auto; }
+  .pill { background:var(--bg); color:var(--fg); border-radius:999px; padding:6px 12px;
+    box-shadow:0 1px 4px rgba(0,0,0,.3); }
+  .pill.ok { border-left:4px solid var(--ok); }
+  .pill.bad { border-left:4px solid var(--bad); max-width:60vw; white-space:pre-wrap; }
+  button.pill, select.pill, input.pill { cursor:pointer; border:0; font:inherit; }
+  input.pill { cursor:text; }
+  button.pill.on { background:#ffd54f; color:#222; }
+  button.pill:hover { filter:brightness(1.08); }
+  #bottom { position:absolute; bottom:10px; left:10px; z-index:3; display:flex; gap:6px; align-items:center; flex-wrap:wrap; }
+  #pos { font-family:monospace; }
+  #sunbox { display:flex; align-items:center; gap:8px; }
+  #sun { width:140px; }
+  .maplibregl-popup-content { font: 12px/1.4 monospace; color:#222; max-height:50vh; overflow:auto; }
+  .maplibregl-popup-content b { color:#1565c0; }
+  kbd { font-family:monospace; background:rgba(127,127,127,.2); padding:1px 5px; border-radius:4px; }
+
+  /* panels: gallery, tweak, help */
+  .panel { position:absolute; z-index:4; background:var(--panel); color:var(--fg); border-radius:12px;
+    box-shadow:0 4px 18px rgba(0,0,0,.35); padding:12px; display:none; }
+  .panel.open { display:block; }
+  .panel h3 { margin:0 0 8px; font-size:14px; display:flex; justify-content:space-between; align-items:center; }
+  .panel h3 button { border:0; background:none; font:inherit; cursor:pointer; color:var(--muted); }
+  #gallery { top:60px; left:10px; right:10px; bottom:60px; overflow:auto; }
+  #cards { display:grid; grid-template-columns:repeat(auto-fill, minmax(150px, 1fr)); gap:10px; }
+  .card { cursor:pointer; border-radius:8px; overflow:hidden; background:rgba(127,127,127,.12); border:2px solid transparent; }
+  .card.on { border-color:#ffd54f; }
+  .card img { width:100%; aspect-ratio:3/2; object-fit:cover; display:block; background:#888; }
+  .card div { padding:5px 7px; font-size:12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .gh { font-size:11px; color:var(--muted); grid-column:1/-1; margin-top:6px; text-transform:uppercase; letter-spacing:.08em; }
+  #tweak { right:10px; top:120px; width:230px; max-height:70vh; overflow:auto; }
+  #tweak label { display:flex; justify-content:space-between; align-items:center; margin:5px 0; gap:8px; }
+  #tweak input[type=color] { width:38px; height:24px; border:0; padding:0; background:none; cursor:pointer; }
+  #tweak input[type=range] { width:110px; }
+  #tweak .acts { display:flex; gap:6px; margin-top:8px; }
+  #tweak .acts button { flex:1; }
+  #help { left:50%; top:50%; transform:translate(-50%,-50%); width:min(420px, 90vw); }
+  #help table { border-collapse:collapse; } #help td { padding:2px 10px 2px 0; }
+
+  #route { right:10px; top:120px; width:260px; max-height:70vh; overflow:auto; }
+  #route ol { margin:0; padding-left:18px; font-size:12px; }
+  #route li { margin:3px 0; } #route li small { color:var(--muted); }
+  #route .acts { display:flex; gap:6px; margin-top:8px; } #route .acts button { flex:1; }
+  .pin { width:22px; height:22px; border-radius:50% 50% 50% 0; transform:rotate(-45deg); border:2px solid #fff;
+    box-shadow:0 1px 4px rgba(0,0,0,.5); cursor:grab; }
+  .pin.a { background:#2f7cff; } .pin.b { background:#e53935; }
+  body.measuring #map canvas, body.routing #map canvas { cursor:crosshair !important; }
+
+  /* Full-screen effects a skin can ask for via metadata.playground.overlay */
+  #overlay { position:absolute; inset:0; z-index:2; pointer-events:none; }
+  #night { position:absolute; inset:0; z-index:2; pointer-events:none; background:#0a1030; opacity:0; mix-blend-mode:multiply; transition:opacity .3s; }
+  body.scanlines #overlay {
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,.18) 0 2px, transparent 2px 4px);
+    box-shadow: inset 0 0 160px rgba(0,0,0,.6);
+  }
+  body.paper #overlay {
+    background: radial-gradient(ellipse at center, transparent 55%, rgba(60,40,10,.35) 100%);
+    mix-blend-mode: multiply;
+  }
+  body.zellige #overlay {
+    background:
+      repeating-linear-gradient(45deg,  rgba(22,63,125,.07) 0 1px, transparent 1px 26px),
+      repeating-linear-gradient(-45deg, rgba(22,63,125,.07) 0 1px, transparent 1px 26px);
+  }
+  body.stars #overlay {
+    background:
+      radial-gradient(1.5px 1.5px at 12% 18%, rgba(255,240,200,.9) 50%, transparent 55%),
+      radial-gradient(1px 1px at 33% 9%,  rgba(255,240,200,.8) 50%, transparent 55%),
+      radial-gradient(1.5px 1.5px at 58% 22%, rgba(255,240,200,.9) 50%, transparent 55%),
+      radial-gradient(1px 1px at 76% 12%, rgba(255,240,200,.8) 50%, transparent 55%),
+      radial-gradient(1.5px 1.5px at 90% 30%, rgba(255,240,200,.9) 50%, transparent 55%),
+      radial-gradient(1px 1px at 22% 40%, rgba(255,240,200,.6) 50%, transparent 55%),
+      radial-gradient(1px 1px at 67% 44%, rgba(255,240,200,.6) 50%, transparent 55%),
+      radial-gradient(1px 1px at 45% 60%, rgba(255,240,200,.5) 50%, transparent 55%),
+      radial-gradient(1px 1px at 84% 70%, rgba(255,240,200,.5) 50%, transparent 55%),
+      radial-gradient(1px 1px at 8% 80%,  rgba(255,240,200,.5) 50%, transparent 55%),
+      radial-gradient(ellipse at center, transparent 50%, rgba(0,0,30,.45) 100%);
+  }
+  body.heat #overlay {
+    background: radial-gradient(ellipse at center, transparent 45%, rgba(150,80,10,.28) 100%);
+    mix-blend-mode: multiply;
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<div id="overlay"></div>
+<div id="night"></div>
+
+<div id="hud">
+  <div class="row">
+    <input id="find" class="pill" type="search" placeholder="Find a skin… ( / )" title="Filter the skin list" style="width:140px">
+    <select id="skin" class="pill" title="Which style file to show"></select>
+    <button id="galleryBtn" class="pill" title="Browse skins with pictures (g)">Gallery</button>
+    <div id="status" class="pill ok">loading…</div>
+  </div>
+  <div class="row">
+    <select id="city" class="pill" title="Jump to a city at street level">
+      <option value="">Go to city…</option>
+      <option value="earth">Whole Earth</option>
+      <option value="-7.6180,33.5935">Casablanca</option>
+      <option value="-6.8416,34.0209">Rabat</option>
+      <option value="-7.9811,31.6295">Marrakech</option>
+      <option value="-4.9760,34.0655">Fès</option>
+      <option value="-5.8340,35.7673">Tanger</option>
+      <option value="-9.5981,30.4278">Agadir</option>
+      <option value="-5.5547,33.8935">Meknès</option>
+      <option value="-5.3684,35.5785">Tétouan</option>
+      <option value="-1.9086,34.6814">Oujda</option>
+      <option value="-6.8936,30.9189">Ouarzazate</option>
+      <option value="-8.5008,33.2549">El Jadida</option>
+      <option value="-13.2033,27.1536">Laâyoune</option>
+      <option value="-6.5802,34.2610">Kénitra</option>
+      <option value="-9.2372,32.2994">Safi</option>
+      <option value="-2.9287,35.1740">Nador</option>
+      <option value="-6.3498,32.3373">Béni Mellal</option>
+      <option value="-5.2636,35.1688">Chefchaouen</option>
+      <option value="-9.7700,31.5120">Essaouira</option>
+      <option value="-8.9750,29.7210">Tafraout</option>
+      <option value="-5.1070,33.5270">Ifrane</option>
+      <option value="-15.9300,23.7200">Dakhla</option>
+      <option value="-4.0200,31.1000">Merzouga</option>
+      <option value="-7.9200,31.1400">Imlil (Toubkal)</option>
+      <option value="-73.9855,40.7580">New York (Times Square)</option>
+    </select>
+    <input id="place" class="pill" type="search" placeholder="Search any place… ⏎" title="Type an address, a town, a landmark, then Enter (OpenStreetMap Nominatim)" style="width:180px">
+    <select id="lang" class="pill" title="Language of the labels">
+      <option value="fr">Labels: FR</option>
+      <option value="ar">Labels: AR</option>
+      <option value="en">Labels: EN</option>
+      <option value="local">Labels: local</option>
+    </select>
+    <button id="threeD" class="pill" title="Tilt to 3D or back to flat (3)">3D</button>
+    <button id="globe" class="pill" title="Show the map as a globe (any skin)">Globe</button>
+    <button id="orbit" class="pill" title="Slowly circle around the view (o)">Orbit</button>
+    <button id="inspect" class="pill" title="Colour every data layer so you can see what the tiles contain (i)">Inspect data</button>
+    <button id="tweakBtn" class="pill" title="Change colours live and export your own style (t)">Tweak</button>
+    <button id="shot" class="pill" title="Save the current view as a PNG (s)">PNG</button>
+    <button id="link" class="pill" title="Copy a link to this exact view and skin (c)">Link</button>
+    <button id="helpBtn" class="pill" title="Keyboard shortcuts (?)">?</button>
+  </div>
+  <div class="row">
+    <button id="routeBtn" class="pill" title="Directions: click a start and an end on the map (d)">Route</button>
+    <button id="measureBtn" class="pill" title="Measure: click points, double-click to finish (m)">Measure</button>
+    <div id="satbox" class="pill" title="Satellite photo under the skin's roads and labels (x)">
+      <button id="satBtn" style="border:0;background:none;font:inherit;color:inherit;cursor:pointer;padding:0">Satellite</button>
+      <input id="satOp" type="range" min="0" max="1" step="0.05" value="0.6" style="width:70px;vertical-align:middle;display:none">
+    </div>
+    <button id="rainBtn" class="pill" title="Live rain radar (RainViewer), refreshes every 5 min">Rain</button>
+    <select id="bookmarks" class="pill" title="Saved views: skin + camera">
+      <option value="">Bookmarks…</option>
+    </select>
+    <button id="tourBtn" class="pill" title="Fly through the Moroccan cities, each in its own skin">Tour</button>
+  </div>
+</div>
+
+<div id="bottom">
+  <div id="pos" class="pill"></div>
+  <div id="sunbox" class="pill" title="Time of day: moves the sun, dims the map at night">
+    <span>☀</span><input id="sun" type="range" min="0" max="24" step="0.25" value="12"><span id="sunv">12:00</span>
+  </div>
+</div>
+
+<div id="gallery" class="panel">
+  <h3>Skins <input id="gfind" class="pill" type="search" placeholder="filter…" style="width:160px;margin-left:auto;margin-right:10px"><button id="gclose">✕</button></h3>
+  <div id="cards"></div>
+</div>
+
+<div id="tweak" class="panel">
+  <h3>Tweak live <button id="tclose">✕</button></h3>
+  <div id="tweakRows"></div>
+  <div class="acts">
+    <button id="texport" class="pill" title="Download the modified style as JSON">Export JSON</button>
+    <button id="treset" class="pill" title="Back to the file on disk">Reset</button>
+  </div>
+  <p style="color:var(--muted);font-size:11px;margin:8px 0 0">Changes are live only. Export to keep them, then copy the file into <code>skins/</code>.</p>
+</div>
+
+<div id="route" class="panel">
+  <h3><span id="routeTitle">Route</span> <button id="rclose">✕</button></h3>
+  <div id="routeSummary" style="color:var(--muted);font-size:12px;margin-bottom:6px">Click the start point on the map, then the end point. Drag the pins to change.</div>
+  <ol id="routeSteps"></ol>
+  <div class="acts"><button id="rswap" class="pill">Swap</button><button id="rclear" class="pill">Clear</button></div>
+</div>
+
+<div id="help" class="panel">
+  <h3>Shortcuts <button id="hclose">✕</button></h3>
+  <table>
+    <tr><td><kbd>/</kbd></td><td>find a skin</td><td><kbd>g</kbd></td><td>gallery</td></tr>
+    <tr><td><kbd>n</kbd> <kbd>p</kbd></td><td>next / previous skin</td><td><kbd>r</kbd></td><td>random skin</td></tr>
+    <tr><td><kbd>3</kbd></td><td>3D / flat</td><td><kbd>o</kbd></td><td>orbit</td></tr>
+    <tr><td><kbd>l</kbd></td><td>cycle label language</td><td><kbd>i</kbd></td><td>inspect data</td></tr>
+    <tr><td><kbd>t</kbd></td><td>tweak colours</td><td><kbd>s</kbd></td><td>save PNG</td></tr>
+    <tr><td><kbd>c</kbd></td><td>copy link</td><td><kbd>Esc</kbd></td><td>close panels / stop tool</td></tr>
+    <tr><td><kbd>d</kbd></td><td>directions</td><td><kbd>m</kbd></td><td>measure</td></tr>
+    <tr><td><kbd>x</kbd></td><td>satellite overlay</td><td><kbd>b</kbd></td><td>save bookmark</td></tr>
+  </table>
+  <p style="color:var(--muted);font-size:11px">Right-drag or Ctrl-drag tilts and rotates. Click anything on the map to see its data.</p>
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@5.24.0/dist/maplibre-gl.js"></script>
+<script>
+// ---- 1. The map ------------------------------------------------------------
+// Camera starts over central Casablanca so buildings are visible right away.
+const map = new maplibregl.Map({
+  container: 'map',
+  style: { version: 8, sources: {}, layers: [] },   // replaced as soon as the skin loads
+  center: [-7.6180, 33.5935],
+  zoom: 15.5,           // street level: houses exist in the tiles from zoom 13 up
+  hash: true,           // position lives in the URL, so a reload lands in the same spot
+  maxPitch: 80,         // let 3D skins tilt almost to the horizon (default is 60)
+  preserveDrawingBuffer: true,   // needed for the PNG export
+  attributionControl: { compact: true }
+});
+// Arabic (and Hebrew) need this plugin for letters to join and read right-to-left.
+maplibregl.setRTLTextPlugin('https://unpkg.com/@mapbox/mapbox-gl-rtl-text@0.2.3/mapbox-gl-rtl-text.js', true);
+map.addControl(new maplibregl.NavigationControl({ visualizePitch: true }), 'top-right');
+map.addControl(new maplibregl.FullscreenControl(), 'top-right');
+map.addControl(new maplibregl.GeolocateControl({ positionOptions: { enableHighAccuracy: true }, trackUserLocation: true }), 'top-right');
+map.addControl(new maplibregl.ScaleControl({ maxWidth: 120, unit: 'metric' }), 'bottom-right');
+
+const $ = id => document.getElementById(id);
+const status = $('status');
+function show(ok, msg) { status.className = 'pill ' + (ok ? 'ok' : 'bad'); status.textContent = msg; }
+let flash = null;
+function toast(msg) {   // a short message, then back to the normal status line
+  const prev = status.textContent, cls = status.className;
+  status.textContent = msg; clearTimeout(flash);
+  flash = setTimeout(() => { status.textContent = prev; status.className = cls; }, 1800);
+}
+
+// ---- 2. Skins: which style file are we editing? ----------------------------
+// skins.json lists the files. ?skin=frontier picks one; default is the first.
+const skinSel = $('skin');
+let skins = [], current = null;
+
+async function loadSkins() {
+  skins = await (await fetch('skins.json?_=' + Date.now())).json();
+  renderOptions('');
+  let wanted = new URLSearchParams(location.search).get('skin');
+  try { wanted = wanted || localStorage.getItem('skin'); } catch (e) {}
+  wanted = wanted || skins[0].id;
+  setSkin(skins.find(s => s.id === wanted) ? wanted : skins[0].id);
+}
+// The list is long (cities, themes, 250 countries), so it is grouped and
+// filterable. Typing "/" anywhere focuses the search box.
+const fold = s => s.normalize('NFD').replace(/[̀-ͯ]/g, '').toLowerCase();
+const shortName = s => s.name.replace(/^(City|Country): /, '');
+function grouped(query) {
+  const q = fold((query || '').trim());
+  const groups = [];
+  for (const s of skins) {
+    if (q && !fold(s.name).includes(q) && !fold(s.id).includes(q)) continue;
+    const g = s.group || 'Themes';
+    let grp = groups.find(x => x.name === g);
+    if (!grp) { grp = { name: g, items: [] }; groups.push(grp); }
+    grp.items.push(s);
+  }
+  return groups;
+}
+function renderOptions(query) {
+  skinSel.innerHTML = grouped(query).map(g =>
+    '<optgroup label="' + g.name + '">' +
+    g.items.map(s => '<option value="' + s.id + '">' + shortName(s) + '</option>').join('') +
+    '</optgroup>').join('');
+  if (current) skinSel.value = current.id;
+  if (query && skinSel.selectedIndex < 0 && skinSel.options.length) skinSel.selectedIndex = 0;
+}
+const findBox = $('find');
+findBox.oninput = () => renderOptions(findBox.value);
+findBox.onkeydown = e => {
+  if (e.key === 'Enter' && skinSel.options.length) { flyToHome = true; setSkin(skinSel.value); skinSel.focus(); }
+  if (e.key === 'Escape') { findBox.value = ''; renderOptions(''); findBox.blur(); }
+};
+
+let flyToHome = false;   // set when the user picks a skin: city skins fly to their city
+function setSkin(id) {
+  current = skins.find(s => s.id === id);
+  skinSel.value = id;
+  lastText = null;                              // force a reload
+  try { localStorage.setItem('skin', id); } catch (e) {}
+  const u = new URL(location.href); u.searchParams.set('skin', id); history.replaceState(null, '', u);
+  applyCamera = true;                           // apply the skin's pitch/bearing once
+  poll();
+  if ($('gallery').classList.contains('open')) markCard();
+}
+skinSel.onchange = () => { flyToHome = true; setSkin(skinSel.value); };
+function stepSkin(delta) {   // next / previous within the (filtered) dropdown
+  const opts = [...skinSel.options]; if (!opts.length) return;
+  let i = opts.findIndex(o => o.value === (current && current.id));
+  i = (i + delta + opts.length) % opts.length;
+  flyToHome = true; setSkin(opts[i].value);
+}
+function randomSkin() { flyToHome = true; setSkin(skins[Math.floor(Math.random() * skins.length)].id); }
+
+// ---- 2b. Gallery: every skin as a picture ----------------------------------
+const gallery = $('gallery'), cards = $('cards');
+function thumbFor(s) {
+  return (s.group === 'Countries') ? 'https://flagcdn.com/w160/' + s.id.slice(2) + '.png' : 'thumbs/' + s.id + '.png';
+}
+function renderCards(query) {
+  cards.innerHTML = grouped(query).map(g => '<div class="gh">' + g.name + ' · ' + g.items.length + '</div>' +
+    g.items.map(s => '<div class="card" data-id="' + s.id + '" title="' + s.file + '">' +
+      '<img loading="lazy" src="' + thumbFor(s) + '" alt="" onerror="this.style.visibility=\'hidden\'">' +
+      '<div>' + shortName(s) + '</div></div>').join('')).join('');
+  markCard();
+}
+function markCard() {
+  for (const c of cards.children) c.classList.toggle('on', current && c.dataset.id === current.id);
+}
+cards.onclick = e => {
+  const card = e.target.closest('.card'); if (!card) return;
+  flyToHome = true; setSkin(card.dataset.id);
+};
+$('gfind').oninput = () => renderCards($('gfind').value);
+function toggleGallery(force) {
+  const open = force !== undefined ? force : !gallery.classList.contains('open');
+  gallery.classList.toggle('open', open);
+  $('galleryBtn').classList.toggle('on', open);
+  if (open) { renderCards($('gfind').value); setTimeout(() => { const on = cards.querySelector('.on'); if (on) on.scrollIntoView({ block: 'center' }); }, 50); }
+}
+$('galleryBtn').onclick = () => toggleGallery();
+$('gclose').onclick = () => toggleGallery(false);
+
+// ---- 3. Live reload --------------------------------------------------------
+// Every second we re-fetch the current file. If the text changed, we parse it
+// and hand it to the map. The camera stays where it is.
+let lastText = null, userStyle = null, shownStyle = null, applyCamera = false;
+
+// Styles may use "/fonts/..." or "fonts/..." for glyphs; make them absolute.
+function absolutize(style) {
+  // Plain string concat on purpose: new URL() would percent-encode the
+  // {fontstack}/{range} braces and MapLibre would reject the template.
+  const dir = location.href.replace(/[?#].*$/, '').replace(/[^/]*$/, '');
+  for (const k of ['glyphs', 'sprite']) {
+    const v = style[k];
+    if (v && !/^https?:/.test(v)) style[k] = v.startsWith('/') ? location.origin + v : dir + v;
+  }
+  return style;
+}
+
+// ---- 3a. Label language ----------------------------------------------------
+// Skins write labels as coalesce(name:fr, name). Rewrite that for the chosen
+// language before the style goes to the map, so every label layer follows.
+let lang = 'fr';
+try { lang = localStorage.getItem('lang') || 'fr'; } catch (e) {}
+$('lang').value = lang;
+function localize(style) {
+  if (lang === 'fr') return style;
+  let txt = JSON.stringify(style);
+  const pat = /\["coalesce",\["get","name:fr"\],\["get","name"\]\]/g;
+  txt = lang === 'local' ? txt.replace(pat, '["get","name"]')
+                         : txt.replace(pat, '["coalesce",["get","name:' + lang + '"],["get","name"]]');
+  return JSON.parse(txt);
+}
+function setLang(l) {
+  lang = l; $('lang').value = l;
+  try { localStorage.setItem('lang', l); } catch (e) {}
+  if (userStyle) { shownStyle = localize(userStyle); if (!inspecting) map.setStyle(shownStyle, { diff: true }); }
+  toast('Labels: ' + l.toUpperCase());
+}
+$('lang').onchange = () => setLang($('lang').value);
+
+// ---- 3b. Globe --------------------------------------------------------------
+// MapLibre can draw the map on a sphere. The button forces it for any skin; a
+// skin can also ask for it with "projection": {"type": "globe"} in its file.
+let globeOn = false;
+try { globeOn = localStorage.getItem('globe') === '1'; } catch (e) {}
+const globeBtn = $('globe');
+function applyProjection(style) {
+  const wantGlobe = globeOn || (style.projection && style.projection.type === 'globe');
+  const set = () => {
+    // right after setStyle the new style may still be loading (terrain or
+    // projection changes force a full reload); retry once it is in
+    try { map.setProjection({ type: wantGlobe ? 'globe' : 'mercator' }); }
+    catch (e) { map.once('style.load', set); }
+  };
+  set();
+  globeBtn.classList.toggle('on', wantGlobe);
+  globeBtn.textContent = wantGlobe ? 'Flat map' : 'Globe';
+}
+globeBtn.onclick = () => {
+  globeOn = !globeOn;
+  try { localStorage.setItem('globe', globeOn ? '1' : '0'); } catch (e) {}
+  if (userStyle) applyProjection(userStyle);
+};
+
+// ---- 3c. Camera on skin change --------------------------------------------
+function applyOverlay(style) {
+  const meta = (style.metadata && style.metadata.playground) || {};
+  document.body.className = meta.overlay || '';
+  applyProjection(style);
+  if (applyCamera) {
+    applyCamera = false;
+    const tilt = { pitch: meta.pitch || 0, bearing: meta.bearing || 0, duration: 800 };
+    let home = flyToHome && meta.center ? { center: meta.center, zoom: meta.zoom || 15 } : null;
+    // A theme has no home of its own. If you pick one while abroad (after a
+    // country skin), come back to Morocco rather than staying there.
+    if (flyToHome && !home) {
+      const c = map.getCenter();
+      const inMorocco = c.lng > -17.5 && c.lng < -0.9 && c.lat > 20.5 && c.lat < 36.1;
+      if (!inMorocco) home = { center: [-7.6180, 33.5935], zoom: 15.5 };
+    }
+    flyToHome = false;
+    const go = () => {
+      if (!home) { map.easeTo(tilt); return; }
+      const flat = { ...home, pitch: 0, bearing: 0 };
+      map.flyTo({ ...flat, duration: 2500 });
+      // With terrain, tilting before the elevation tile for the destination is
+      // in leaves the camera's ground height at 0, which for a capital on a
+      // plateau puts the view kilometres off. So arrive flat, then poll until
+      // the camera's ground height agrees with the terrain, then tilt.
+      // Measured: a jumpTo carrying only the pitch makes MapLibre recompute the
+      // ground height; a jumpTo with a centre or zoom resets it to 0.
+      const groundReady = () => {
+        if (!map.getTerrain()) return true;
+        const want = map.queryTerrainElevation(map.getCenter());
+        if (want === null || want === undefined) return false;
+        const have = (map.transform && map.transform.elevation) || 0;
+        return Math.abs(want - have) <= 30;
+      };
+      const tiltWhenReady = (tries) => {
+        map.jumpTo({ pitch: 0 });
+        if (groundReady() || tries <= 0) { map.easeTo(tilt); return; }
+        setTimeout(() => tiltWhenReady(tries - 1), 150);
+      };
+      map.once('moveend', () => tiltWhenReady(40));
+    };
+    if (style.terrain) map.once('idle', go); else go();
+  }
+}
+
+async function poll() {
+  if (!current) return;
+  try {
+    const res = await fetch(current.file + '?_=' + Date.now());
+    const text = await res.text();
+    if (text !== lastText) {
+      lastText = text;
+      let style;
+      try { style = JSON.parse(text); }
+      catch (e) { show(false, current.file + ' is not valid JSON:\n' + e.message); return; }
+      userStyle = absolutize(style);
+      shownStyle = localize(userStyle);
+      if (!inspecting) map.setStyle(shownStyle, { diff: true });
+      applyOverlay(userStyle);
+      applySun();
+      if ($('tweak').classList.contains('open')) setTimeout(buildTweaks, 400);
+      show(true, current.file + ' · ' + style.layers.length + ' layers · ' + new Date().toLocaleTimeString());
+    }
+  } catch (e) { show(false, 'could not fetch ' + current.file + ': ' + e.message); }
+}
+loadSkins();
+setInterval(poll, 1000);
+
+// Style errors MapLibre finds while rendering (unknown property, bad filter…)
+map.on('error', e => {
+  const m = (e.error && e.error.message) || String(e.error);
+  if (/tile|Failed to fetch|aborted/i.test(m)) return;     // network noise, ignore
+  show(false, 'Map error: ' + m);
+});
+
+// ---- 4. Going places --------------------------------------------------------
+const citySel = $('city');
+citySel.onchange = () => {
+  if (!citySel.value) return;
+  if (citySel.value === 'earth') {
+    map.flyTo({ center: [-7, 25], zoom: 1.6, pitch: 0, bearing: 0, duration: 2500 });
+  } else {
+    const [lng, lat] = citySel.value.split(',').map(Number);
+    map.flyTo({ center: [lng, lat], zoom: 15.5, duration: 1500 });
+  }
+  citySel.value = '';
+};
+// Free geocoding by OpenStreetMap's Nominatim: an address, a town, a landmark.
+const placeBox = $('place');
+placeBox.onkeydown = async e => {
+  if (e.key === 'Escape') { placeBox.blur(); return; }
+  if (e.key !== 'Enter' || !placeBox.value.trim()) return;
+  const q = placeBox.value.trim();
+  toast('Searching “' + q + '”…');
+  try {
+    const url = 'https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&accept-language=fr&q=' + encodeURIComponent(q);
+    const r = await (await fetch(url)).json();
+    if (!r.length) { toast('Nothing found for “' + q + '”'); return; }
+    const hit = r[0], [s, n, w, e2] = hit.boundingbox.map(Number);
+    const big = (n - s) > 0.02 || (e2 - w) > 0.02;      // a town or region: fit it; a point: street level
+    if (big) map.fitBounds([[w, s], [e2, n]], { padding: 40, maxZoom: 15.5, duration: 2500 });
+    else map.flyTo({ center: [Number(hit.lon), Number(hit.lat)], zoom: 16.5, duration: 2500 });
+    toast(hit.display_name.split(',').slice(0, 3).join(','));
+    placeBox.blur();
+  } catch (err) { toast('Search failed: ' + err.message); }
+};
+
+// ---- 5. Position read-out --------------------------------------------------
+const pos = $('pos');
+function updatePos() {
+  const c = map.getCenter();
+  pos.textContent = 'z ' + map.getZoom().toFixed(2) + '  lon ' + c.lng.toFixed(4) +
+    '  lat ' + c.lat.toFixed(4) + '  pitch ' + map.getPitch().toFixed(0) + '°';
+}
+map.on('move', updatePos); updatePos();
+
+// ---- 6. Sun: time of day ----------------------------------------------------
+// Moves the light that shades the 3D buildings and terrain, and dims the map
+// into night. Pure viewer effect: the skin files do not change.
+const sun = $('sun'), sunv = $('sunv');
+function applySun() {
+  const h = Number(sun.value);
+  sunv.textContent = String(Math.floor(h)).padStart(2, '0') + ':' + (h % 1 ? '30' : '00');
+  const day = h >= 6 && h <= 18;
+  const azimuth = 90 + ((h - 6) / 12) * 180;                 // sunrise right, noon top, sunset left
+  const polar = Math.min(85, 15 + Math.abs(h - 12) / 6 * 60); // low sun at dawn and dusk
+  const night = day ? 0 : Math.min(1, (h < 6 ? (6 - h) : (h - 18)) / 2.5);
+  try { map.setLight({ anchor: 'viewport', color: night ? '#9fb0ff' : '#ffffff',
+                       intensity: day ? 0.45 - Math.abs(h - 12) / 40 : 0.15, position: [1.15, azimuth, polar] }); } catch (e) {}
+  $('night').style.opacity = (night * 0.6).toFixed(2);
+}
+sun.oninput = applySun;
+
+// ---- 7. 3D, orbit, PNG, link ------------------------------------------------
+$('threeD').onclick = () => {
+  if (map.getPitch() > 5) map.easeTo({ pitch: 0, bearing: 0, duration: 700 });
+  else map.easeTo({ pitch: 55, bearing: map.getBearing() || -20, duration: 700 });
+};
+map.on('move', () => $('threeD').classList.toggle('on', map.getPitch() > 5));
+
+let orbiting = false, orbitFrame = null;
+function orbit(on) {
+  orbiting = on; $('orbit').classList.toggle('on', on);
+  cancelAnimationFrame(orbitFrame);
+  const step = () => { if (!orbiting) return; map.setBearing(map.getBearing() + 0.06); orbitFrame = requestAnimationFrame(step); };
+  if (on) { if (map.getPitch() < 5) map.easeTo({ pitch: 55, duration: 700 }); step(); }
+}
+$('orbit').onclick = () => orbit(!orbiting);
+for (const ev of ['mousedown', 'touchstart', 'wheel']) map.getCanvas().addEventListener(ev, () => { if (orbiting) orbit(false); }, { passive: true });
+
+// Every export goes through the server's /clean endpoint (watermarks-remover):
+// provenance and AI metadata are stripped from the file before it is saved.
+// If the cleaner is missing or fails, the raw file is saved instead.
+async function cleanAndSave(blob, filename) {
+  let out = blob, note = '';
+  try {
+    const r = await fetch('clean', { method: 'POST', headers: { 'X-Filename': filename }, body: blob });
+    if (r.ok) {
+      const rep = JSON.parse(r.headers.get('X-Clean-Report') || '{}');
+      out = await r.blob();
+      note = rep.error ? ' (cleaner: ' + rep.error.slice(0, 60) + ')' : (rep.changed ? ' · metadata stripped' : ' · clean');
+    }
+  } catch (e) { note = ' (cleaner offline)'; }
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(out); a.download = filename; a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 10000);
+  toast(filename + ' saved' + note);
+}
+$('shot').onclick = () => {
+  const c = map.getCenter();
+  const name = (current ? current.id : 'map') + '_z' + map.getZoom().toFixed(1) + '_' + c.lat.toFixed(4) + '_' + c.lng.toFixed(4) + '.png';
+  // read the canvas inside a render frame, otherwise the buffer can be empty
+  map.once('render', () => map.getCanvas().toBlob(b => cleanAndSave(b, name), 'image/png'));
+  map.triggerRepaint();
+};
+$('link').onclick = async () => {
+  try { await navigator.clipboard.writeText(location.href); toast('Link copied'); }
+  catch (e) { prompt('Copy this link', location.href); }
+};
+
+// ---- 8. Tweak: change colours live, export your own style ------------------
+// Each row drives one paint property. Text rows apply to every label layer.
+const TWEAKS = [
+  ['Background', 'background', 'background-color'],
+  ['Water', 'water', 'fill-color'], ['Rivers', 'waterway', 'line-color'],
+  ['Parks', 'park', 'fill-color'], ['Forest', 'landcover-wood', 'fill-color'],
+  ['Farmland', 'landcover-farmland', 'fill-color'], ['Built-up land', 'landuse-residential', 'fill-color'],
+  ['Buildings', 'building', 'fill-extrusion-color'],
+  ['Small roads', 'road-minor', 'line-color'], ['Road edges', 'road-minor-casing', 'line-color'],
+  ['Main roads', 'road-major', 'line-color'], ['Highways', 'road-highway', 'line-color'],
+  ['Rail', 'rail', 'line-color'], ['Borders', 'boundary-country', 'line-color'],
+  ['Text', '*symbol', 'text-color'], ['Text halo', '*symbol', 'text-halo-color'],
+];
+const tweak = $('tweak'), tweakRows = $('tweakRows');
+const firstHex = v => { const m = JSON.stringify(v).match(/#[0-9a-f]{6}/i); return m ? m[0].toLowerCase() : '#888888'; };
+function layersFor(id) {
+  const st = map.getStyle(); if (!st) return [];
+  if (id === '*symbol') return st.layers.filter(l => l.type === 'symbol' && l.layout && l.layout['text-field']).map(l => l.id);
+  return map.getLayer(id) ? [id] : [];
+}
+function buildTweaks() {
+  let html = '';
+  for (const [label, id, prop] of TWEAKS) {
+    const ids = layersFor(id); if (!ids.length) continue;
+    let v;
+    for (const lid of ids) { try { v = map.getPaintProperty(lid, prop); } catch (e) {} if (v !== undefined) break; }
+    if (v === undefined) continue;
+    html += '<label>' + label + '<input type="color" value="' + firstHex(v) + '" data-id="' + id + '" data-prop="' + prop + '"></label>';
+  }
+  if (map.getTerrain()) {
+    const ex = (map.getTerrain().exaggeration || 1).toFixed(1);
+    html += '<label>Relief ×<span id="exv">' + ex + '</span><input type="range" id="exag" min="0" max="3" step="0.1" value="' + ex + '"></label>';
+  }
+  if (map.getLayer('building')) {
+    html += '<label>Buildings ×<span id="bhv">1.0</span><input type="range" id="bh" min="0" max="3" step="0.1" value="1"></label>';
+  }
+  tweakRows.innerHTML = html;
+  tweakRows.querySelectorAll('input[type=color]').forEach(inp => inp.oninput = () => {
+    for (const lid of layersFor(inp.dataset.id)) { try { map.setPaintProperty(lid, inp.dataset.prop, inp.value); } catch (e) {} }
+  });
+  const ex = $('exag'); if (ex) ex.oninput = () => { $('exv').textContent = Number(ex.value).toFixed(1); map.setTerrain({ source: 'dem', exaggeration: Number(ex.value) }); };
+  const bh = $('bh'); if (bh) bh.oninput = () => {
+    $('bhv').textContent = Number(bh.value).toFixed(1);
+    try { map.setPaintProperty('building', 'fill-extrusion-height', ['*', Number(bh.value), ['coalesce', ['get', 'render_height'], 8]]); } catch (e) {}
+  };
+}
+function toggleTweak(force) {
+  const open = force !== undefined ? force : !tweak.classList.contains('open');
+  tweak.classList.toggle('open', open); $('tweakBtn').classList.toggle('on', open);
+  if (open) buildTweaks();
+}
+$('tweakBtn').onclick = () => toggleTweak();
+$('tclose').onclick = () => toggleTweak(false);
+$('treset').onclick = () => { if (shownStyle) { map.setStyle(shownStyle); setTimeout(buildTweaks, 400); toast('Back to the file'); } };
+$('texport').onclick = () => {
+  const st = map.getStyle();
+  // put the glyph path back to the portable form the skins use
+  if (st.glyphs && st.glyphs.includes('/fonts/')) st.glyphs = '/fonts/{fontstack}/{range}.pbf';
+  st.name = (st.name || 'style') + ' (tweaked)';
+  const blob = new Blob([JSON.stringify(st, null, 2)], { type: 'application/json' });
+  cleanAndSave(blob, (current ? current.id : 'style') + '-tweaked.json');
+};
+
+// ---- 8b. Overlays that must survive a skin change ---------------------------
+// setStyle drops runtime sources and layers. Each tool registers a restore
+// function; after every style change they put their data back.
+const restorers = [];
+function restoreOverlays() { for (const r of restorers) { try { r(); } catch (e) {} } }
+map.on('styledata', () => { clearTimeout(window.__rst); window.__rst = setTimeout(restoreOverlays, 150); });
+// insert runtime layers under the skin's labels and buildings so they look native
+function anchorLayer() {
+  const st = map.getStyle(); if (!st) return undefined;
+  const l = st.layers.find(l => l.id === 'building' || l.type === 'symbol');
+  return l ? l.id : undefined;
+}
+function firstSymbol() {
+  const st = map.getStyle(); if (!st) return undefined;
+  const l = st.layers.find(l => l.type === 'symbol'); return l ? l.id : undefined;
+}
+const km = (a, b) => {   // haversine, kilometres
+  const R = 6371, dLat = (b[1] - a[1]) * Math.PI / 180, dLng = (b[0] - a[0]) * Math.PI / 180;
+  const h = Math.sin(dLat / 2) ** 2 + Math.cos(a[1] * Math.PI / 180) * Math.cos(b[1] * Math.PI / 180) * Math.sin(dLng / 2) ** 2;
+  return 2 * R * Math.asin(Math.sqrt(h));
+};
+const fmtKm = d => d < 1 ? Math.round(d * 1000) + ' m' : d.toFixed(d < 10 ? 2 : 1) + ' km';
+const fmtMin = s => s < 3600 ? Math.round(s / 60) + ' min' : Math.floor(s / 3600) + ' h ' + Math.round((s % 3600) / 60) + ' min';
+
+// ---- 8c. Directions (OSRM public demo server, driving) ---------------------
+let mode = null;               // null | 'route' | 'measure'
+const routeState = { a: null, b: null, ma: null, mb: null, geo: null, alts: null };
+const routePanel = $('route');
+function setMode(m) {
+  mode = (mode === m) ? null : m;
+  document.body.classList.toggle('routing', mode === 'route');
+  document.body.classList.toggle('measuring', mode === 'measure');
+  $('routeBtn').classList.toggle('on', mode === 'route');
+  $('measureBtn').classList.toggle('on', mode === 'measure');
+  routePanel.classList.toggle('open', mode === 'route' || !!routeState.geo);
+  if (mode === 'measure') { measure.pts = []; drawMeasure(); toast('Click points to measure, double-click to finish'); }
+  if (mode === 'route' && !routeState.a) toast('Click the start point');
+}
+function pin(cls, lngLat, onDrag) {
+  const el = document.createElement('div'); el.className = 'pin ' + cls;
+  const m = new maplibregl.Marker({ element: el, draggable: true, anchor: 'bottom' }).setLngLat(lngLat).addTo(map);
+  m.on('dragend', onDrag); return m;
+}
+async function fetchRoute() {
+  const { a, b } = routeState; if (!a || !b) return;
+  $('routeSummary').textContent = 'Routing…';
+  try {
+    const url = 'https://router.project-osrm.org/route/v1/driving/' + a.join(',') + ';' + b.join(',') +
+      '?overview=full&geometries=geojson&steps=true&alternatives=true';
+    const r = await (await fetch(url)).json();
+    if (r.code !== 'Ok' || !r.routes.length) { $('routeSummary').textContent = 'No route found (' + (r.message || r.code) + ')'; return; }
+    const best = r.routes[0];
+    routeState.geo = best.geometry;
+    routeState.alts = { type: 'FeatureCollection', features: r.routes.slice(1).map(x => ({ type: 'Feature', geometry: x.geometry })) };
+    drawRoute();
+    $('routeTitle').textContent = 'Route · ' + fmtKm(best.distance / 1000) + ' · ' + fmtMin(best.duration);
+    $('routeSummary').textContent = 'Driving, via ' + (best.legs[0].summary || 'local roads') + (r.routes.length > 1 ? ' · ' + (r.routes.length - 1) + ' alternative shown dashed' : '');
+    $('routeSteps').innerHTML = best.legs[0].steps.map(s => '<li>' + stepText(s) + ' <small>' + fmtKm(s.distance / 1000) + '</small></li>').join('');
+    routePanel.classList.add('open');
+    const bb = best.geometry.coordinates.reduce((B, c) => [Math.min(B[0], c[0]), Math.min(B[1], c[1]), Math.max(B[2], c[0]), Math.max(B[3], c[1])], [180, 90, -180, -90]);
+    map.fitBounds([[bb[0], bb[1]], [bb[2], bb[3]]], { padding: { top: 140, bottom: 60, left: 40, right: 290 }, duration: 1500, pitch: 0 });
+  } catch (e) { $('routeSummary').textContent = 'Routing failed: ' + e.message; }
+}
+function stepText(s) {
+  const m = s.maneuver, name = s.name ? ' onto ' + s.name : '', mod = m.modifier ? m.modifier.replace('uturn', 'U-turn') : '';
+  const T = { turn: 'Turn ' + mod, 'new name': 'Continue' + (mod && mod !== 'straight' ? ' ' + mod : ''), continue: 'Continue ' + mod,
+    merge: 'Merge ' + mod, 'on ramp': 'Take the ramp ' + mod, 'off ramp': 'Take the exit ' + mod, fork: 'Keep ' + mod,
+    'end of road': 'Turn ' + mod, roundabout: 'At the roundabout take exit ' + (m.exit || ''), rotary: 'At the roundabout take exit ' + (m.exit || ''),
+    'roundabout turn': 'At the roundabout turn ' + mod, 'exit roundabout': 'Exit the roundabout', 'exit rotary': 'Exit the roundabout',
+    depart: 'Head ' + (mod || 'out'), arrive: 'Arrive at your destination' };
+  return (T[m.type] || (m.type + ' ' + mod)).replace(/\s+/g, ' ').trim() + (m.type === 'arrive' ? '' : name);
+}
+function drawRoute() {
+  if (!routeState.geo) return;
+  const src = map.getSource('route');
+  const data = { type: 'Feature', geometry: routeState.geo };
+  if (src) { src.setData(data); map.getSource('route-alt').setData(routeState.alts); return; }
+  map.addSource('route', { type: 'geojson', data });
+  map.addSource('route-alt', { type: 'geojson', data: routeState.alts });
+  const before = firstSymbol();
+  map.addLayer({ id: 'route-alt', type: 'line', source: 'route-alt', layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: { 'line-color': '#7a8aa8', 'line-width': 4, 'line-dasharray': [1, 2], 'line-opacity': 0.8 } }, before);
+  map.addLayer({ id: 'route-casing', type: 'line', source: 'route', layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: { 'line-color': '#ffffff', 'line-width': 10, 'line-opacity': 0.9 } }, before);
+  map.addLayer({ id: 'route-line', type: 'line', source: 'route', layout: { 'line-cap': 'round', 'line-join': 'round' },
+    paint: { 'line-color': '#2f7cff', 'line-width': 5 } }, before);
+}
+restorers.push(drawRoute);
+function clearRoute() {
+  for (const k of ['ma', 'mb']) { if (routeState[k]) routeState[k].remove(); routeState[k] = null; }
+  routeState.a = routeState.b = routeState.geo = routeState.alts = null;
+  for (const id of ['route-line', 'route-casing', 'route-alt']) if (map.getLayer(id)) map.removeLayer(id);
+  for (const id of ['route', 'route-alt']) if (map.getSource(id)) map.removeSource(id);
+  $('routeTitle').textContent = 'Route'; $('routeSteps').innerHTML = '';
+  $('routeSummary').textContent = 'Click the start point on the map, then the end point. Drag the pins to change.';
+  if (mode !== 'route') routePanel.classList.remove('open');
+}
+$('routeBtn').onclick = () => setMode('route');
+$('rclose').onclick = () => { if (mode === 'route') setMode('route'); routePanel.classList.remove('open'); };
+$('rclear').onclick = clearRoute;
+$('rswap').onclick = () => {
+  if (!routeState.a || !routeState.b) return;
+  [routeState.a, routeState.b] = [routeState.b, routeState.a];
+  routeState.ma.setLngLat(routeState.a); routeState.mb.setLngLat(routeState.b); fetchRoute();
+};
+
+// ---- 8d. Measure ------------------------------------------------------------
+const measure = { pts: [] };
+function drawMeasure() {
+  const pts = measure.pts;
+  let total = 0; for (let i = 1; i < pts.length; i++) total += km(pts[i - 1], pts[i]);
+  const line = { type: 'Feature', geometry: { type: 'LineString', coordinates: pts } };
+  const points = { type: 'FeatureCollection', features: pts.map((p, i) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: p },
+    properties: { label: i === pts.length - 1 && i > 0 ? fmtKm(total) : '' } })) };
+  if (!map.getSource('measure')) {
+    map.addSource('measure', { type: 'geojson', data: line });
+    map.addSource('measure-pts', { type: 'geojson', data: points });
+    map.addLayer({ id: 'measure-line', type: 'line', source: 'measure', paint: { 'line-color': '#ff3d7f', 'line-width': 3, 'line-dasharray': [2, 1.5] } });
+    map.addLayer({ id: 'measure-pts', type: 'circle', source: 'measure-pts', paint: { 'circle-radius': 5, 'circle-color': '#ff3d7f', 'circle-stroke-color': '#fff', 'circle-stroke-width': 2 } });
+    map.addLayer({ id: 'measure-label', type: 'symbol', source: 'measure-pts', layout: { 'text-field': ['get', 'label'], 'text-font': ['Noto Sans Bold'], 'text-size': 13, 'text-offset': [0, -1.2], 'text-allow-overlap': true },
+      paint: { 'text-color': '#ff3d7f', 'text-halo-color': '#fff', 'text-halo-width': 2 } });
+  } else { map.getSource('measure').setData(line); map.getSource('measure-pts').setData(points); }
+  if (pts.length > 1) show(true, 'Measure: ' + fmtKm(total) + ' over ' + (pts.length - 1) + ' segment' + (pts.length > 2 ? 's' : ''));
+}
+restorers.push(() => { if (measure.pts.length) drawMeasure(); });
+$('measureBtn').onclick = () => setMode('measure');
+map.on('dblclick', e => { if (mode === 'measure') { e.preventDefault(); setMode('measure'); } });
+
+// ---- 8e. Satellite photo overlay ---------------------------------------------
+let satOn = false;
+function drawSat() {
+  if (!satOn) return;
+  if (!map.getSource('sat-overlay')) map.addSource('sat-overlay', { type: 'raster', tileSize: 256, maxzoom: 19,
+    tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'], attribution: 'Imagery © Esri' });
+  if (!map.getLayer('sat-overlay')) map.addLayer({ id: 'sat-overlay', type: 'raster', source: 'sat-overlay',
+    paint: { 'raster-opacity': Number($('satOp').value) } }, map.getLayer('water') ? 'water' : anchorLayer());
+}
+restorers.push(drawSat);
+$('satBtn').onclick = () => {
+  satOn = !satOn; $('satbox').classList.toggle('on', satOn); $('satOp').style.display = satOn ? 'inline-block' : 'none';
+  if (satOn) drawSat(); else if (map.getLayer('sat-overlay')) map.removeLayer('sat-overlay');
+};
+$('satOp').oninput = () => { if (map.getLayer('sat-overlay')) map.setPaintProperty('sat-overlay', 'raster-opacity', Number($('satOp').value)); };
+
+// ---- 8f. Rain radar (RainViewer, free) -------------------------------------
+let rainOn = false, rainFrame = null, rainTimer = null;
+async function loadRainFrame() {
+  const r = await (await fetch('https://api.rainviewer.com/public/weather-maps.json')).json();
+  const f = r.radar.past[r.radar.past.length - 1];
+  rainFrame = r.host + f.path + '/256/{z}/{x}/{y}/2/1_1.png';
+  return new Date(f.time * 1000);
+}
+function drawRain() {
+  if (!rainOn || !rainFrame) return;
+  if (map.getSource('rain')) { if (!map.getLayer('rain')) map.addLayer({ id: 'rain', type: 'raster', source: 'rain', paint: { 'raster-opacity': 0.7 } }, firstSymbol()); return; }
+  map.addSource('rain', { type: 'raster', tileSize: 256, tiles: [rainFrame], attribution: 'Rain © RainViewer' });
+  map.addLayer({ id: 'rain', type: 'raster', source: 'rain', paint: { 'raster-opacity': 0.7 } }, firstSymbol());
+}
+restorers.push(drawRain);
+async function refreshRain() {
+  try {
+    const when = await loadRainFrame();
+    if (map.getLayer('rain')) map.removeLayer('rain'); if (map.getSource('rain')) map.removeSource('rain');
+    drawRain(); toast('Rain radar ' + when.toLocaleTimeString());
+  } catch (e) { toast('Rain radar unavailable: ' + e.message); }
+}
+$('rainBtn').onclick = () => {
+  rainOn = !rainOn; $('rainBtn').classList.toggle('on', rainOn);
+  if (rainOn) { refreshRain(); rainTimer = setInterval(refreshRain, 5 * 60 * 1000); }
+  else { clearInterval(rainTimer); if (map.getLayer('rain')) map.removeLayer('rain'); if (map.getSource('rain')) map.removeSource('rain'); }
+};
+
+// ---- 8g. Bookmarks ----------------------------------------------------------
+const bmSel = $('bookmarks');
+function loadBookmarks() { try { return JSON.parse(localStorage.getItem('bookmarks') || '[]'); } catch (e) { return []; } }
+function saveBookmarks(b) { try { localStorage.setItem('bookmarks', JSON.stringify(b)); } catch (e) {} }
+function renderBookmarks() {
+  const b = loadBookmarks();
+  bmSel.innerHTML = '<option value="">Bookmarks…</option><option value="+">＋ Save this view</option>' +
+    (b.length ? '<option value="-">－ Remove one…</option>' : '') +
+    b.map((x, i) => '<option value="' + i + '">' + x.name + '</option>').join('');
+}
+bmSel.onchange = () => {
+  const v = bmSel.value; bmSel.value = '';
+  const b = loadBookmarks();
+  if (v === '+') {
+    const name = prompt('Name for this view', (current ? shortName(current) : '') + ' · z' + map.getZoom().toFixed(1));
+    if (!name) return;
+    const c = map.getCenter();
+    b.push({ name, skin: current && current.id, center: [c.lng, c.lat], zoom: map.getZoom(), pitch: map.getPitch(), bearing: map.getBearing() });
+    saveBookmarks(b); renderBookmarks(); toast('Saved');
+  } else if (v === '-') {
+    const which = prompt('Remove which? ' + b.map((x, i) => (i + 1) + ') ' + x.name).join('  '));
+    const i = Number(which) - 1; if (b[i]) { b.splice(i, 1); saveBookmarks(b); renderBookmarks(); toast('Removed'); }
+  } else if (v !== '') {
+    const x = b[Number(v)]; if (!x) return;
+    if (x.skin && (!current || current.id !== x.skin)) setSkin(x.skin);   // no fly-home: we set the camera ourselves
+    map.flyTo({ center: x.center, zoom: x.zoom, pitch: x.pitch, bearing: x.bearing, duration: 2000 });
+  }
+};
+renderBookmarks();
+
+// ---- 8h. Tour of the Moroccan cities ----------------------------------------
+let touring = false, tourTimer = null;
+function tour(on) {
+  touring = on; $('tourBtn').classList.toggle('on', on); clearTimeout(tourTimer);
+  if (!on) return;
+  const cities = skins.filter(s => s.group === 'Moroccan cities');
+  let i = Math.max(0, cities.findIndex(s => current && s.id === current.id));
+  const next = () => {
+    if (!touring) return;
+    i = (i + 1) % cities.length; flyToHome = true; setSkin(cities[i].id);
+    tourTimer = setTimeout(() => { if (touring) { orbit(true); tourTimer = setTimeout(() => { orbit(false); next(); }, 7000); } }, 6000);
+  };
+  next();
+}
+$('tourBtn').onclick = () => tour(!touring);
+
+// map clicks feed the active tool
+map.on('click', e => {
+  if (mode === 'route') {
+    const p = [e.lngLat.lng, e.lngLat.lat];
+    if (!routeState.a || (routeState.a && routeState.b)) {
+      clearRoute(); routeState.a = p;
+      routeState.ma = pin('a', p, () => { routeState.a = routeState.ma.getLngLat().toArray(); fetchRoute(); });
+      toast('Now click the end point');
+    } else {
+      routeState.b = p;
+      routeState.mb = pin('b', p, () => { routeState.b = routeState.mb.getLngLat().toArray(); fetchRoute(); });
+      fetchRoute();
+    }
+  } else if (mode === 'measure') {
+    measure.pts.push([e.lngLat.lng, e.lngLat.lat]); drawMeasure();
+  }
+});
+
+// ---- 9. Help & keyboard ----------------------------------------------------
+const help = $('help');
+$('helpBtn').onclick = () => help.classList.toggle('open');
+$('hclose').onclick = () => help.classList.remove('open');
+const LANGS = ['fr', 'ar', 'en', 'local'];
+document.addEventListener('keydown', e => {
+  const typing = /INPUT|SELECT|TEXTAREA/.test(document.activeElement.tagName);
+  if (e.key === 'Escape') {
+    toggleGallery(false); toggleTweak(false); help.classList.remove('open'); document.activeElement.blur();
+    if (mode) setMode(mode); if (touring) tour(false); if (orbiting) orbit(false); return;
+  }
+  if (typing) return;
+  if (e.key === '/') { e.preventDefault(); findBox.focus(); findBox.select(); return; }
+  const k = e.key.toLowerCase();
+  if (k === 'g') toggleGallery();
+  else if (k === 'n') stepSkin(1);
+  else if (k === 'p') stepSkin(-1);
+  else if (k === 'r') randomSkin();
+  else if (k === '3') $('threeD').click();
+  else if (k === 'o') orbit(!orbiting);
+  else if (k === 'l') setLang(LANGS[(LANGS.indexOf(lang) + 1) % LANGS.length]);
+  else if (k === 'i') $('inspect').click();
+  else if (k === 't') toggleTweak();
+  else if (k === 's') $('shot').click();
+  else if (k === 'c') $('link').click();
+  else if (k === '?') help.classList.toggle('open');
+  else if (k === 'd') setMode('route');
+  else if (k === 'm') setMode('measure');
+  else if (k === 'x') $('satBtn').click();
+  else if (k === 'b') { bmSel.value = '+'; bmSel.onchange(); }
+});
+
+// ---- 10. Click inspector ---------------------------------------------------
+// Click anything drawn on the map to see which of YOUR layers drew it and the
+// raw tags on the feature (class, subclass, name…). That tells you what to
+// put in a filter.
+map.on('click', e => {
+  if (mode) return;                       // a tool (route, measure) owns the clicks
+  const feats = map.queryRenderedFeatures(e.point);
+  if (!feats.length) return;
+  const seen = new Set();
+  const html = feats.filter(f => {
+    const k = f.layer.id + JSON.stringify(f.properties);
+    if (seen.has(k)) return false; seen.add(k); return true;
+  }).slice(0, 8).map(f => {
+    const props = Object.entries(f.properties)
+      .map(([k, v]) => '  ' + k + ': ' + JSON.stringify(v)).join('\n');
+    return '<b>layer</b> ' + f.layer.id + '\n<b>source-layer</b> ' + f.sourceLayer +
+      '\n<b>$type</b> ' + f.geometry.type + '\n' + props;
+  }).join('\n────────────\n');
+  new maplibregl.Popup({ maxWidth: '420px' }).setLngLat(e.lngLat)
+    .setHTML('<pre style="margin:0">' + html + '</pre>').addTo(map);
+});
+map.getCanvas().style.cursor = 'crosshair';
+
+// ---- 11. Inspect-data mode -------------------------------------------------
+// Builds a throwaway style that draws EVERY source-layer in a different
+// colour, so you can discover data your own style does not show yet.
+const SOURCE_LAYERS = ['water','waterway','landcover','landuse','park','boundary',
+  'aeroway','transportation','building','housenumber','mountain_peak','poi',
+  'place','water_name','transportation_name','aerodrome_label'];
+const COLORS = ['#1f77b4','#17becf','#2ca02c','#bcbd22','#98df8a','#d62728',
+  '#9467bd','#ff7f0e','#8c564b','#c49c94','#7f7f7f','#e377c2',
+  '#000000','#1f77b4','#ff7f0e','#9467bd'];
+function inspectStyle(base) {
+  const src = Object.keys(base.sources).find(k => base.sources[k].type === 'vector');
+  const layers = [{ id: 'bg', type: 'background', paint: { 'background-color': '#111' } }];
+  SOURCE_LAYERS.forEach((sl, i) => {
+    const c = COLORS[i];
+    layers.push(
+      { id: sl + '-poly', type: 'fill', source: src, 'source-layer': sl,
+        filter: ['==', '$type', 'Polygon'], paint: { 'fill-color': c, 'fill-opacity': 0.25, 'fill-outline-color': c } },
+      { id: sl + '-line', type: 'line', source: src, 'source-layer': sl,
+        filter: ['==', '$type', 'LineString'], paint: { 'line-color': c, 'line-width': 1 } },
+      { id: sl + '-pt', type: 'circle', source: src, 'source-layer': sl,
+        filter: ['==', '$type', 'Point'], paint: { 'circle-color': c, 'circle-radius': 3 } });
+  });
+  return { version: 8, sources: base.sources, glyphs: base.glyphs, layers };
+}
+let inspecting = false;
+const inspectBtn = $('inspect');
+inspectBtn.onclick = () => {
+  if (!userStyle) return;
+  inspecting = !inspecting;
+  inspectBtn.classList.toggle('on', inspecting);
+  inspectBtn.textContent = inspecting ? 'Back to my style' : 'Inspect data';
+  map.setStyle(inspecting ? inspectStyle(userStyle) : shownStyle);
+};
+</script>
+</body>
+</html>

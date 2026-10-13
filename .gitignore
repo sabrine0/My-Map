@@ -1,0 +1,24 @@
+# Tile data built/downloaded by planetiler (gigabytes). Rebuild with: docker compose run --rm build
+data/*
+!data/.gitkeep
+
+# Fonts (138 MB, 14 000 files). Download with: .\get-fonts.ps1
+fonts/
+
+# Node / Python leftovers
+node_modules/
+__pycache__/
+*.pyc
+package-lock.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+
+# Local exports and scratch
+*.log
+*.tmp
+playground/exports/

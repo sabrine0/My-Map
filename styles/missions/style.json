@@ -1,0 +1,97 @@
+{
+  "version": 8,
+  "name": "Missions",
+  "metadata": { "note": "Parchment-toned Morocco. Edit colours here or open this file in Maputnik (maputnik.github.io/editor)." },
+  "sources": {
+    "morocco": { "type": "vector", "url": "mbtiles://{morocco}" }
+  },
+  "glyphs": "{fontstack}/{range}.pbf",
+  "layers": [
+    { "id": "background", "type": "background",
+      "paint": { "background-color": "#f3e9d2" } },
+
+    { "id": "landcover-wood", "type": "fill", "source": "morocco", "source-layer": "landcover",
+      "filter": ["in", "class", "wood", "forest"],
+      "paint": { "fill-color": "#cfd9b3", "fill-opacity": 0.7 } },
+
+    { "id": "landcover-sand", "type": "fill", "source": "morocco", "source-layer": "landcover",
+      "filter": ["==", "class", "sand"],
+      "paint": { "fill-color": "#eedfb6" } },
+
+    { "id": "park", "type": "fill", "source": "morocco", "source-layer": "park",
+      "paint": { "fill-color": "#d6e0b8", "fill-opacity": 0.6 } },
+
+    { "id": "landuse-residential", "type": "fill", "source": "morocco", "source-layer": "landuse",
+      "filter": ["==", "class", "residential"],
+      "paint": { "fill-color": "#ebdfc4", "fill-opacity": 0.6 } },
+
+    { "id": "water", "type": "fill", "source": "morocco", "source-layer": "water",
+      "paint": { "fill-color": "#9fc5d6" } },
+
+    { "id": "waterway", "type": "line", "source": "morocco", "source-layer": "waterway",
+      "paint": { "line-color": "#8fb8cb", "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.5, 14, 2] } },
+
+    { "id": "building", "type": "fill", "source": "morocco", "source-layer": "building",
+      "minzoom": 13,
+      "paint": { "fill-color": "#dccbaa", "fill-outline-color": "#c4b08a" } },
+
+    { "id": "road-minor", "type": "line", "source": "morocco", "source-layer": "transportation",
+      "minzoom": 12,
+      "filter": ["in", "class", "minor", "service", "track", "path"],
+      "paint": { "line-color": "#ffffff", "line-width": ["interpolate", ["linear"], ["zoom"], 12, 0.8, 16, 3] } },
+
+    { "id": "road-secondary", "type": "line", "source": "morocco", "source-layer": "transportation",
+      "filter": ["in", "class", "secondary", "tertiary"],
+      "paint": { "line-color": "#f8eab8", "line-width": ["interpolate", ["linear"], ["zoom"], 8, 0.8, 16, 5] } },
+
+    { "id": "road-primary", "type": "line", "source": "morocco", "source-layer": "transportation",
+      "filter": ["in", "class", "primary", "trunk"],
+      "paint": { "line-color": "#f2c86a", "line-width": ["interpolate", ["linear"], ["zoom"], 6, 0.8, 16, 7] } },
+
+    { "id": "road-motorway", "type": "line", "source": "morocco", "source-layer": "transportation",
+      "filter": ["==", "class", "motorway"],
+      "paint": { "line-color": "#c9893a", "line-width": ["interpolate", ["linear"], ["zoom"], 5, 1, 16, 9] } },
+
+    { "id": "railway", "type": "line", "source": "morocco", "source-layer": "transportation",
+      "filter": ["==", "class", "rail"],
+      "paint": { "line-color": "#9c8d72", "line-width": 1, "line-dasharray": [4, 3] } },
+
+    { "id": "boundary-country", "type": "line", "source": "morocco", "source-layer": "boundary",
+      "filter": ["all", ["==", "admin_level", 2], ["!=", "disputed", 1]],
+      "paint": { "line-color": "#8a6d3b", "line-width": 1.5, "line-dasharray": [3, 2] } },
+
+    { "id": "boundary-region", "type": "line", "source": "morocco", "source-layer": "boundary",
+      "filter": ["==", "admin_level", 4],
+      "paint": { "line-color": "#a58f66", "line-width": 0.8, "line-dasharray": [2, 2], "line-opacity": 0.6 } },
+
+    { "id": "road-label", "type": "symbol", "source": "morocco", "source-layer": "transportation_name",
+      "minzoom": 13,
+      "layout": { "symbol-placement": "line", "text-field": ["coalesce", ["get", "name:fr"], ["get", "name"]],
+                  "text-font": ["Open Sans Regular"], "text-size": 11 },
+      "paint": { "text-color": "#5b4a2f", "text-halo-color": "#f3e9d2", "text-halo-width": 1.2 } },
+
+    { "id": "place-village", "type": "symbol", "source": "morocco", "source-layer": "place",
+      "minzoom": 10,
+      "filter": ["in", "class", "village", "hamlet", "suburb", "neighbourhood"],
+      "layout": { "text-field": ["coalesce", ["get", "name:fr"], ["get", "name"]],
+                  "text-font": ["Open Sans Regular"], "text-size": 11 },
+      "paint": { "text-color": "#6b5a3e", "text-halo-color": "#f3e9d2", "text-halo-width": 1.2 } },
+
+    { "id": "place-town", "type": "symbol", "source": "morocco", "source-layer": "place",
+      "filter": ["==", "class", "town"],
+      "layout": { "text-field": ["coalesce", ["get", "name:fr"], ["get", "name"]],
+                  "text-font": ["Open Sans Regular"], "text-size": 13 },
+      "paint": { "text-color": "#4a3a24", "text-halo-color": "#f3e9d2", "text-halo-width": 1.4 } },
+
+    { "id": "place-city", "type": "symbol", "source": "morocco", "source-layer": "place",
+      "filter": ["==", "class", "city"],
+      "layout": { "text-field": ["coalesce", ["get", "name:fr"], ["get", "name"]],
+                  "text-font": ["Open Sans Bold"], "text-size": ["interpolate", ["linear"], ["zoom"], 4, 12, 10, 18] },
+      "paint": { "text-color": "#2f2415", "text-halo-color": "#f3e9d2", "text-halo-width": 1.6 } },
+
+    { "id": "place-country", "type": "symbol", "source": "morocco", "source-layer": "place",
+      "filter": ["all", ["==", "class", "country"], ["==", "name", "Maroc"]],
+      "layout": { "text-field": "MAROC", "text-font": ["Open Sans Bold"], "text-size": 20, "text-letter-spacing": 0.2 },
+      "paint": { "text-color": "#8a6d3b", "text-opacity": 0.8 } }
+  ]
+}

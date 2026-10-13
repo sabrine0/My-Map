@@ -1,0 +1,1748 @@
+[
+  {
+    "id": "casablanca",
+    "name": "City: Casablanca",
+    "file": "skins/casablanca.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "rabat",
+    "name": "City: Rabat",
+    "file": "skins/rabat.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "fes",
+    "name": "City: F\u00e8s",
+    "file": "skins/fes.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "tanger",
+    "name": "City: Tanger",
+    "file": "skins/tanger.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "agadir",
+    "name": "City: Agadir",
+    "file": "skins/agadir.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "meknes",
+    "name": "City: Mekn\u00e8s",
+    "file": "skins/meknes.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "tetouan",
+    "name": "City: T\u00e9touan",
+    "file": "skins/tetouan.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "oujda",
+    "name": "City: Oujda",
+    "file": "skins/oujda.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "ouarzazate",
+    "name": "City: Ouarzazate",
+    "file": "skins/ouarzazate.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "eljadida",
+    "name": "City: El Jadida",
+    "file": "skins/eljadida.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "laayoune",
+    "name": "City: La\u00e2youne",
+    "file": "skins/laayoune.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "kenitra",
+    "name": "City: K\u00e9nitra",
+    "file": "skins/kenitra.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "safi",
+    "name": "City: Safi",
+    "file": "skins/safi.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "nador",
+    "name": "City: Nador",
+    "file": "skins/nador.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "benimellal",
+    "name": "City: B\u00e9ni Mellal",
+    "file": "skins/benimellal.json",
+    "group": "Moroccan cities"
+  },
+  {
+    "id": "frontier",
+    "name": "Old Wild Frontier",
+    "file": "skins/frontier.json",
+    "group": "Themes"
+  },
+  {
+    "id": "empire",
+    "name": "Great Street Empire",
+    "file": "skins/empire.json",
+    "group": "Themes"
+  },
+  {
+    "id": "cybershock",
+    "name": "Cybershock 2099",
+    "file": "skins/cybershock.json",
+    "group": "Themes"
+  },
+  {
+    "id": "cubeworld",
+    "name": "Cubeworld",
+    "file": "skins/cubeworld.json",
+    "group": "Themes"
+  },
+  {
+    "id": "wasteland",
+    "name": "Wasteland 4",
+    "file": "skins/wasteland.json",
+    "group": "Themes"
+  },
+  {
+    "id": "sanandreas",
+    "name": "Great Street Empire: San Andreas",
+    "file": "skins/sanandreas.json",
+    "group": "Themes"
+  },
+  {
+    "id": "zellige",
+    "name": "Zellige",
+    "file": "skins/zellige.json",
+    "group": "Themes"
+  },
+  {
+    "id": "sahara",
+    "name": "Sahara",
+    "file": "skins/sahara.json",
+    "group": "Themes"
+  },
+  {
+    "id": "medina",
+    "name": "Medina",
+    "file": "skins/medina.json",
+    "group": "Themes"
+  },
+  {
+    "id": "chefchaouen",
+    "name": "Chefchaouen",
+    "file": "skins/chefchaouen.json",
+    "group": "Themes"
+  },
+  {
+    "id": "atlas",
+    "name": "Atlas",
+    "file": "skins/atlas.json",
+    "group": "Themes"
+  },
+  {
+    "id": "amazigh",
+    "name": "Amazigh",
+    "file": "skins/amazigh.json",
+    "group": "Themes"
+  },
+  {
+    "id": "ramadan",
+    "name": "Ramadan Night",
+    "file": "skins/ramadan.json",
+    "group": "Themes"
+  },
+  {
+    "id": "essaouira",
+    "name": "Essaouira",
+    "file": "skins/essaouira.json",
+    "group": "Themes"
+  },
+  {
+    "id": "tafraout",
+    "name": "Tafraout",
+    "file": "skins/tafraout.json",
+    "group": "Themes"
+  },
+  {
+    "id": "minttea",
+    "name": "Mint Tea",
+    "file": "skins/minttea.json",
+    "group": "Themes"
+  },
+  {
+    "id": "argan",
+    "name": "Argan",
+    "file": "skins/argan.json",
+    "group": "Themes"
+  },
+  {
+    "id": "ifrane",
+    "name": "Ifrane",
+    "file": "skins/ifrane.json",
+    "group": "Themes"
+  },
+  {
+    "id": "dakhla",
+    "name": "Dakhla",
+    "file": "skins/dakhla.json",
+    "group": "Themes"
+  },
+  {
+    "id": "caftan",
+    "name": "Caftan",
+    "file": "skins/caftan.json",
+    "group": "Themes"
+  },
+  {
+    "id": "blueprint",
+    "name": "Blueprint",
+    "file": "skins/blueprint.json",
+    "group": "Themes"
+  },
+  {
+    "id": "sketch",
+    "name": "Pencil Sketch",
+    "file": "skins/sketch.json",
+    "group": "Themes"
+  },
+  {
+    "id": "noir",
+    "name": "Noir",
+    "file": "skins/noir.json",
+    "group": "Themes"
+  },
+  {
+    "id": "relief",
+    "name": "Relief (Atlas + forests)",
+    "file": "skins/relief.json",
+    "group": "Themes"
+  },
+  {
+    "id": "earth",
+    "name": "Earth (satellite globe)",
+    "file": "skins/earth.json",
+    "group": "Themes"
+  },
+  {
+    "id": "c-af",
+    "name": "Country: Afghanistan",
+    "file": "skins/country/af.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-al",
+    "name": "Country: Albania (Albanie)",
+    "file": "skins/country/al.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-dz",
+    "name": "Country: Algeria (Alg\u00e9rie)",
+    "file": "skins/country/dz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-as",
+    "name": "Country: American Samoa (Samoa am\u00e9ricaines)",
+    "file": "skins/country/as.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ad",
+    "name": "Country: Andorra (Andorre)",
+    "file": "skins/country/ad.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ao",
+    "name": "Country: Angola",
+    "file": "skins/country/ao.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ai",
+    "name": "Country: Anguilla",
+    "file": "skins/country/ai.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-aq",
+    "name": "Country: Antarctica (Antarctique)",
+    "file": "skins/country/aq.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ag",
+    "name": "Country: Antigua and Barbuda (Antigua-et-Barbuda)",
+    "file": "skins/country/ag.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ar",
+    "name": "Country: Argentina (Argentine)",
+    "file": "skins/country/ar.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-am",
+    "name": "Country: Armenia (Arm\u00e9nie)",
+    "file": "skins/country/am.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-aw",
+    "name": "Country: Aruba",
+    "file": "skins/country/aw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-au",
+    "name": "Country: Australia (Australie)",
+    "file": "skins/country/au.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-at",
+    "name": "Country: Austria (Autriche)",
+    "file": "skins/country/at.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-az",
+    "name": "Country: Azerbaijan (Azerba\u00efdjan)",
+    "file": "skins/country/az.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bs",
+    "name": "Country: Bahamas",
+    "file": "skins/country/bs.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bh",
+    "name": "Country: Bahrain (Bahre\u00efn)",
+    "file": "skins/country/bh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bd",
+    "name": "Country: Bangladesh",
+    "file": "skins/country/bd.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bb",
+    "name": "Country: Barbados (Barbade)",
+    "file": "skins/country/bb.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-by",
+    "name": "Country: Belarus (Bi\u00e9lorussie)",
+    "file": "skins/country/by.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-be",
+    "name": "Country: Belgium (Belgique)",
+    "file": "skins/country/be.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bz",
+    "name": "Country: Belize",
+    "file": "skins/country/bz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bj",
+    "name": "Country: Benin (B\u00e9nin)",
+    "file": "skins/country/bj.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bm",
+    "name": "Country: Bermuda (Bermudes)",
+    "file": "skins/country/bm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bt",
+    "name": "Country: Bhutan (Bhoutan)",
+    "file": "skins/country/bt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bo",
+    "name": "Country: Bolivia (Bolivie)",
+    "file": "skins/country/bo.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ba",
+    "name": "Country: Bosnia and Herzegovina (Bosnie-Herz\u00e9govine)",
+    "file": "skins/country/ba.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bw",
+    "name": "Country: Botswana",
+    "file": "skins/country/bw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bv",
+    "name": "Country: Bouvet Island (\u00cele Bouvet)",
+    "file": "skins/country/bv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-br",
+    "name": "Country: Brazil (Br\u00e9sil)",
+    "file": "skins/country/br.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-io",
+    "name": "Country: British Indian Ocean Territory (Territoire britannique de l'oc\u00e9an Indien)",
+    "file": "skins/country/io.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-vg",
+    "name": "Country: British Virgin Islands (\u00celes Vierges britanniques)",
+    "file": "skins/country/vg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bn",
+    "name": "Country: Brunei",
+    "file": "skins/country/bn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bg",
+    "name": "Country: Bulgaria (Bulgarie)",
+    "file": "skins/country/bg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bf",
+    "name": "Country: Burkina Faso",
+    "file": "skins/country/bf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bi",
+    "name": "Country: Burundi",
+    "file": "skins/country/bi.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kh",
+    "name": "Country: Cambodia (Cambodge)",
+    "file": "skins/country/kh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cm",
+    "name": "Country: Cameroon (Cameroun)",
+    "file": "skins/country/cm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ca",
+    "name": "Country: Canada",
+    "file": "skins/country/ca.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cv",
+    "name": "Country: Cape Verde (\u00celes du Cap-Vert)",
+    "file": "skins/country/cv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bq",
+    "name": "Country: Caribbean Netherlands (Pays-Bas carib\u00e9ens)",
+    "file": "skins/country/bq.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ky",
+    "name": "Country: Cayman Islands (\u00celes Ca\u00efmans)",
+    "file": "skins/country/ky.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cf",
+    "name": "Country: Central African Republic (R\u00e9publique centrafricaine)",
+    "file": "skins/country/cf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-td",
+    "name": "Country: Chad (Tchad)",
+    "file": "skins/country/td.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cl",
+    "name": "Country: Chile (Chili)",
+    "file": "skins/country/cl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cn",
+    "name": "Country: China (Chine)",
+    "file": "skins/country/cn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cx",
+    "name": "Country: Christmas Island (\u00cele Christmas)",
+    "file": "skins/country/cx.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cc",
+    "name": "Country: Cocos (Keeling) Islands (\u00celes Cocos)",
+    "file": "skins/country/cc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-co",
+    "name": "Country: Colombia (Colombie)",
+    "file": "skins/country/co.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-km",
+    "name": "Country: Comoros (Comores)",
+    "file": "skins/country/km.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cg",
+    "name": "Country: Congo",
+    "file": "skins/country/cg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ck",
+    "name": "Country: Cook Islands (\u00celes Cook)",
+    "file": "skins/country/ck.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cr",
+    "name": "Country: Costa Rica",
+    "file": "skins/country/cr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-hr",
+    "name": "Country: Croatia (Croatie)",
+    "file": "skins/country/hr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cu",
+    "name": "Country: Cuba",
+    "file": "skins/country/cu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cw",
+    "name": "Country: Cura\u00e7ao",
+    "file": "skins/country/cw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cy",
+    "name": "Country: Cyprus (Chypre)",
+    "file": "skins/country/cy.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cz",
+    "name": "Country: Czechia (Tch\u00e9quie)",
+    "file": "skins/country/cz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-cd",
+    "name": "Country: DR Congo (Congo (R\u00e9p. d\u00e9m.))",
+    "file": "skins/country/cd.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-dk",
+    "name": "Country: Denmark (Danemark)",
+    "file": "skins/country/dk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-dj",
+    "name": "Country: Djibouti",
+    "file": "skins/country/dj.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-dm",
+    "name": "Country: Dominica (Dominique)",
+    "file": "skins/country/dm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-do",
+    "name": "Country: Dominican Republic (R\u00e9publique dominicaine)",
+    "file": "skins/country/do.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ec",
+    "name": "Country: Ecuador (\u00c9quateur)",
+    "file": "skins/country/ec.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-eg",
+    "name": "Country: Egypt (\u00c9gypte)",
+    "file": "skins/country/eg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sv",
+    "name": "Country: El Salvador (Salvador)",
+    "file": "skins/country/sv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gq",
+    "name": "Country: Equatorial Guinea (Guin\u00e9e \u00e9quatoriale)",
+    "file": "skins/country/gq.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-er",
+    "name": "Country: Eritrea (\u00c9rythr\u00e9e)",
+    "file": "skins/country/er.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ee",
+    "name": "Country: Estonia (Estonie)",
+    "file": "skins/country/ee.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sz",
+    "name": "Country: Eswatini",
+    "file": "skins/country/sz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-et",
+    "name": "Country: Ethiopia (\u00c9thiopie)",
+    "file": "skins/country/et.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fk",
+    "name": "Country: Falkland Islands (\u00celes Malouines)",
+    "file": "skins/country/fk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fo",
+    "name": "Country: Faroe Islands (\u00celes F\u00e9ro\u00e9)",
+    "file": "skins/country/fo.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fj",
+    "name": "Country: Fiji (Fidji)",
+    "file": "skins/country/fj.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fi",
+    "name": "Country: Finland (Finlande)",
+    "file": "skins/country/fi.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fr",
+    "name": "Country: France",
+    "file": "skins/country/fr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gf",
+    "name": "Country: French Guiana (Guyane)",
+    "file": "skins/country/gf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pf",
+    "name": "Country: French Polynesia (Polyn\u00e9sie fran\u00e7aise)",
+    "file": "skins/country/pf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tf",
+    "name": "Country: French Southern and Antarctic Lands (Terres australes et antarctiques fran\u00e7aises)",
+    "file": "skins/country/tf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ga",
+    "name": "Country: Gabon",
+    "file": "skins/country/ga.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gm",
+    "name": "Country: Gambia (Gambie)",
+    "file": "skins/country/gm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ge",
+    "name": "Country: Georgia (G\u00e9orgie)",
+    "file": "skins/country/ge.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-de",
+    "name": "Country: Germany (Allemagne)",
+    "file": "skins/country/de.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gh",
+    "name": "Country: Ghana",
+    "file": "skins/country/gh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gi",
+    "name": "Country: Gibraltar",
+    "file": "skins/country/gi.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gr",
+    "name": "Country: Greece (Gr\u00e8ce)",
+    "file": "skins/country/gr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gl",
+    "name": "Country: Greenland (Groenland)",
+    "file": "skins/country/gl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gd",
+    "name": "Country: Grenada (Grenade)",
+    "file": "skins/country/gd.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gp",
+    "name": "Country: Guadeloupe",
+    "file": "skins/country/gp.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gu",
+    "name": "Country: Guam",
+    "file": "skins/country/gu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gt",
+    "name": "Country: Guatemala",
+    "file": "skins/country/gt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gg",
+    "name": "Country: Guernsey (Guernesey)",
+    "file": "skins/country/gg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gn",
+    "name": "Country: Guinea (Guin\u00e9e)",
+    "file": "skins/country/gn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gw",
+    "name": "Country: Guinea-Bissau (Guin\u00e9e-Bissau)",
+    "file": "skins/country/gw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gy",
+    "name": "Country: Guyana",
+    "file": "skins/country/gy.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ht",
+    "name": "Country: Haiti (Ha\u00efti)",
+    "file": "skins/country/ht.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-hm",
+    "name": "Country: Heard Island and McDonald Islands (\u00celes Heard-et-MacDonald)",
+    "file": "skins/country/hm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-hn",
+    "name": "Country: Honduras",
+    "file": "skins/country/hn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-hk",
+    "name": "Country: Hong Kong",
+    "file": "skins/country/hk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-hu",
+    "name": "Country: Hungary (Hongrie)",
+    "file": "skins/country/hu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-is",
+    "name": "Country: Iceland (Islande)",
+    "file": "skins/country/is.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-in",
+    "name": "Country: India (Inde)",
+    "file": "skins/country/in.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-id",
+    "name": "Country: Indonesia (Indon\u00e9sie)",
+    "file": "skins/country/id.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ir",
+    "name": "Country: Iran",
+    "file": "skins/country/ir.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-iq",
+    "name": "Country: Iraq (Irak)",
+    "file": "skins/country/iq.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ie",
+    "name": "Country: Ireland (Irlande)",
+    "file": "skins/country/ie.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-im",
+    "name": "Country: Isle of Man (\u00cele de Man)",
+    "file": "skins/country/im.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-il",
+    "name": "Country: Israel (Isra\u00ebl)",
+    "file": "skins/country/il.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-it",
+    "name": "Country: Italy (Italie)",
+    "file": "skins/country/it.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ci",
+    "name": "Country: Ivory Coast (C\u00f4te d'Ivoire)",
+    "file": "skins/country/ci.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-jm",
+    "name": "Country: Jamaica (Jama\u00efque)",
+    "file": "skins/country/jm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-jp",
+    "name": "Country: Japan (Japon)",
+    "file": "skins/country/jp.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-je",
+    "name": "Country: Jersey",
+    "file": "skins/country/je.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-jo",
+    "name": "Country: Jordan (Jordanie)",
+    "file": "skins/country/jo.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kz",
+    "name": "Country: Kazakhstan",
+    "file": "skins/country/kz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ke",
+    "name": "Country: Kenya",
+    "file": "skins/country/ke.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ki",
+    "name": "Country: Kiribati",
+    "file": "skins/country/ki.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-xk",
+    "name": "Country: Kosovo",
+    "file": "skins/country/xk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kw",
+    "name": "Country: Kuwait (Kowe\u00eft)",
+    "file": "skins/country/kw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kg",
+    "name": "Country: Kyrgyzstan (Kirghizistan)",
+    "file": "skins/country/kg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-la",
+    "name": "Country: Laos",
+    "file": "skins/country/la.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lv",
+    "name": "Country: Latvia (Lettonie)",
+    "file": "skins/country/lv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lb",
+    "name": "Country: Lebanon (Liban)",
+    "file": "skins/country/lb.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ls",
+    "name": "Country: Lesotho",
+    "file": "skins/country/ls.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lr",
+    "name": "Country: Liberia",
+    "file": "skins/country/lr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ly",
+    "name": "Country: Libya (Libye)",
+    "file": "skins/country/ly.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-li",
+    "name": "Country: Liechtenstein",
+    "file": "skins/country/li.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lt",
+    "name": "Country: Lithuania (Lituanie)",
+    "file": "skins/country/lt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lu",
+    "name": "Country: Luxembourg",
+    "file": "skins/country/lu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mo",
+    "name": "Country: Macau (Macao)",
+    "file": "skins/country/mo.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mg",
+    "name": "Country: Madagascar",
+    "file": "skins/country/mg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mw",
+    "name": "Country: Malawi",
+    "file": "skins/country/mw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-my",
+    "name": "Country: Malaysia (Malaisie)",
+    "file": "skins/country/my.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mv",
+    "name": "Country: Maldives",
+    "file": "skins/country/mv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ml",
+    "name": "Country: Mali",
+    "file": "skins/country/ml.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mt",
+    "name": "Country: Malta (Malte)",
+    "file": "skins/country/mt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mh",
+    "name": "Country: Marshall Islands (\u00celes Marshall)",
+    "file": "skins/country/mh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mq",
+    "name": "Country: Martinique",
+    "file": "skins/country/mq.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mr",
+    "name": "Country: Mauritania (Mauritanie)",
+    "file": "skins/country/mr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mu",
+    "name": "Country: Mauritius (\u00cele Maurice)",
+    "file": "skins/country/mu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-yt",
+    "name": "Country: Mayotte",
+    "file": "skins/country/yt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mx",
+    "name": "Country: Mexico (Mexique)",
+    "file": "skins/country/mx.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-fm",
+    "name": "Country: Micronesia (Micron\u00e9sie)",
+    "file": "skins/country/fm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-md",
+    "name": "Country: Moldova (Moldavie)",
+    "file": "skins/country/md.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mc",
+    "name": "Country: Monaco",
+    "file": "skins/country/mc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mn",
+    "name": "Country: Mongolia (Mongolie)",
+    "file": "skins/country/mn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-me",
+    "name": "Country: Montenegro (Mont\u00e9n\u00e9gro)",
+    "file": "skins/country/me.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ms",
+    "name": "Country: Montserrat",
+    "file": "skins/country/ms.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ma",
+    "name": "Country: Morocco (Maroc)",
+    "file": "skins/country/ma.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mz",
+    "name": "Country: Mozambique",
+    "file": "skins/country/mz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mm",
+    "name": "Country: Myanmar (Birmanie)",
+    "file": "skins/country/mm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-na",
+    "name": "Country: Namibia (Namibie)",
+    "file": "skins/country/na.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nr",
+    "name": "Country: Nauru",
+    "file": "skins/country/nr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-np",
+    "name": "Country: Nepal (N\u00e9pal)",
+    "file": "skins/country/np.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nl",
+    "name": "Country: Netherlands (Pays-Bas)",
+    "file": "skins/country/nl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nc",
+    "name": "Country: New Caledonia (Nouvelle-Cal\u00e9donie)",
+    "file": "skins/country/nc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nz",
+    "name": "Country: New Zealand (Nouvelle-Z\u00e9lande)",
+    "file": "skins/country/nz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ni",
+    "name": "Country: Nicaragua",
+    "file": "skins/country/ni.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ne",
+    "name": "Country: Niger",
+    "file": "skins/country/ne.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ng",
+    "name": "Country: Nigeria (Nig\u00e9ria)",
+    "file": "skins/country/ng.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nu",
+    "name": "Country: Niue",
+    "file": "skins/country/nu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-nf",
+    "name": "Country: Norfolk Island (\u00cele Norfolk)",
+    "file": "skins/country/nf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kp",
+    "name": "Country: North Korea (Cor\u00e9e du Nord)",
+    "file": "skins/country/kp.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mk",
+    "name": "Country: North Macedonia (Mac\u00e9doine du Nord)",
+    "file": "skins/country/mk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mp",
+    "name": "Country: Northern Mariana Islands (\u00celes Mariannes du Nord)",
+    "file": "skins/country/mp.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-no",
+    "name": "Country: Norway (Norv\u00e8ge)",
+    "file": "skins/country/no.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-om",
+    "name": "Country: Oman",
+    "file": "skins/country/om.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pk",
+    "name": "Country: Pakistan",
+    "file": "skins/country/pk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pw",
+    "name": "Country: Palau (Palaos (Palau))",
+    "file": "skins/country/pw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ps",
+    "name": "Country: Palestine",
+    "file": "skins/country/ps.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pa",
+    "name": "Country: Panama",
+    "file": "skins/country/pa.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pg",
+    "name": "Country: Papua New Guinea (Papouasie-Nouvelle-Guin\u00e9e)",
+    "file": "skins/country/pg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-py",
+    "name": "Country: Paraguay",
+    "file": "skins/country/py.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pe",
+    "name": "Country: Peru (P\u00e9rou)",
+    "file": "skins/country/pe.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ph",
+    "name": "Country: Philippines",
+    "file": "skins/country/ph.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pn",
+    "name": "Country: Pitcairn Islands (\u00celes Pitcairn)",
+    "file": "skins/country/pn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pl",
+    "name": "Country: Poland (Pologne)",
+    "file": "skins/country/pl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pt",
+    "name": "Country: Portugal",
+    "file": "skins/country/pt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pr",
+    "name": "Country: Puerto Rico (Porto Rico)",
+    "file": "skins/country/pr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-qa",
+    "name": "Country: Qatar",
+    "file": "skins/country/qa.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ro",
+    "name": "Country: Romania (Roumanie)",
+    "file": "skins/country/ro.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ru",
+    "name": "Country: Russia (Russie)",
+    "file": "skins/country/ru.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-rw",
+    "name": "Country: Rwanda",
+    "file": "skins/country/rw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-re",
+    "name": "Country: R\u00e9union",
+    "file": "skins/country/re.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-bl",
+    "name": "Country: Saint Barth\u00e9lemy (Saint-Barth\u00e9lemy)",
+    "file": "skins/country/bl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sh",
+    "name": "Country: Saint Helena, Ascension and Tristan da Cunha (Sainte-H\u00e9l\u00e8ne, Ascension et Tristan da Cunha)",
+    "file": "skins/country/sh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kn",
+    "name": "Country: Saint Kitts and Nevis (Saint-Christophe-et-Ni\u00e9v\u00e8s)",
+    "file": "skins/country/kn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lc",
+    "name": "Country: Saint Lucia (Sainte-Lucie)",
+    "file": "skins/country/lc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-mf",
+    "name": "Country: Saint Martin (Saint-Martin)",
+    "file": "skins/country/mf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-pm",
+    "name": "Country: Saint Pierre and Miquelon (Saint-Pierre-et-Miquelon)",
+    "file": "skins/country/pm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-vc",
+    "name": "Country: Saint Vincent and the Grenadines (Saint-Vincent-et-les-Grenadines)",
+    "file": "skins/country/vc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ws",
+    "name": "Country: Samoa",
+    "file": "skins/country/ws.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sm",
+    "name": "Country: San Marino (Saint-Marin)",
+    "file": "skins/country/sm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sa",
+    "name": "Country: Saudi Arabia (Arabie Saoudite)",
+    "file": "skins/country/sa.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sn",
+    "name": "Country: Senegal (S\u00e9n\u00e9gal)",
+    "file": "skins/country/sn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-rs",
+    "name": "Country: Serbia (Serbie)",
+    "file": "skins/country/rs.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sc",
+    "name": "Country: Seychelles",
+    "file": "skins/country/sc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sl",
+    "name": "Country: Sierra Leone",
+    "file": "skins/country/sl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sg",
+    "name": "Country: Singapore (Singapour)",
+    "file": "skins/country/sg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sx",
+    "name": "Country: Sint Maarten (Saint-Martin)",
+    "file": "skins/country/sx.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sk",
+    "name": "Country: Slovakia (Slovaquie)",
+    "file": "skins/country/sk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-si",
+    "name": "Country: Slovenia (Slov\u00e9nie)",
+    "file": "skins/country/si.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sb",
+    "name": "Country: Solomon Islands (\u00celes Salomon)",
+    "file": "skins/country/sb.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-so",
+    "name": "Country: Somalia (Somalie)",
+    "file": "skins/country/so.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-za",
+    "name": "Country: South Africa (Afrique du Sud)",
+    "file": "skins/country/za.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gs",
+    "name": "Country: South Georgia (G\u00e9orgie du Sud-et-les \u00celes Sandwich du Sud)",
+    "file": "skins/country/gs.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-kr",
+    "name": "Country: South Korea (Cor\u00e9e du Sud)",
+    "file": "skins/country/kr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ss",
+    "name": "Country: South Sudan (Soudan du Sud)",
+    "file": "skins/country/ss.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-es",
+    "name": "Country: Spain (Espagne)",
+    "file": "skins/country/es.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-lk",
+    "name": "Country: Sri Lanka",
+    "file": "skins/country/lk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sd",
+    "name": "Country: Sudan (Soudan)",
+    "file": "skins/country/sd.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sr",
+    "name": "Country: Suriname (Surinam)",
+    "file": "skins/country/sr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sj",
+    "name": "Country: Svalbard and Jan Mayen (Svalbard et Jan Mayen)",
+    "file": "skins/country/sj.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-se",
+    "name": "Country: Sweden (Su\u00e8de)",
+    "file": "skins/country/se.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ch",
+    "name": "Country: Switzerland (Suisse)",
+    "file": "skins/country/ch.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-sy",
+    "name": "Country: Syria (Syrie)",
+    "file": "skins/country/sy.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-st",
+    "name": "Country: S\u00e3o Tom\u00e9 and Pr\u00edncipe (S\u00e3o Tom\u00e9 et Pr\u00edncipe)",
+    "file": "skins/country/st.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tw",
+    "name": "Country: Taiwan (Ta\u00efwan)",
+    "file": "skins/country/tw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tj",
+    "name": "Country: Tajikistan (Tadjikistan)",
+    "file": "skins/country/tj.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tz",
+    "name": "Country: Tanzania (Tanzanie)",
+    "file": "skins/country/tz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-th",
+    "name": "Country: Thailand (Tha\u00eflande)",
+    "file": "skins/country/th.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tl",
+    "name": "Country: Timor-Leste (Timor oriental)",
+    "file": "skins/country/tl.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tg",
+    "name": "Country: Togo",
+    "file": "skins/country/tg.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tk",
+    "name": "Country: Tokelau",
+    "file": "skins/country/tk.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-to",
+    "name": "Country: Tonga",
+    "file": "skins/country/to.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tt",
+    "name": "Country: Trinidad and Tobago (Trinit\u00e9-et-Tobago)",
+    "file": "skins/country/tt.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tn",
+    "name": "Country: Tunisia (Tunisie)",
+    "file": "skins/country/tn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tm",
+    "name": "Country: Turkmenistan (Turkm\u00e9nistan)",
+    "file": "skins/country/tm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tc",
+    "name": "Country: Turks and Caicos Islands (\u00celes Turques-et-Ca\u00efques)",
+    "file": "skins/country/tc.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tv",
+    "name": "Country: Tuvalu",
+    "file": "skins/country/tv.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-tr",
+    "name": "Country: T\u00fcrkiye (Turquie)",
+    "file": "skins/country/tr.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ug",
+    "name": "Country: Uganda (Ouganda)",
+    "file": "skins/country/ug.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ua",
+    "name": "Country: Ukraine",
+    "file": "skins/country/ua.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ae",
+    "name": "Country: United Arab Emirates (\u00c9mirats arabes unis)",
+    "file": "skins/country/ae.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-gb",
+    "name": "Country: United Kingdom (Royaume-Uni)",
+    "file": "skins/country/gb.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-us",
+    "name": "Country: United States (\u00c9tats-Unis)",
+    "file": "skins/country/us.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-um",
+    "name": "Country: United States Minor Outlying Islands (\u00celes mineures \u00e9loign\u00e9es des \u00c9tats-Unis)",
+    "file": "skins/country/um.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-vi",
+    "name": "Country: United States Virgin Islands (\u00celes Vierges des \u00c9tats-Unis)",
+    "file": "skins/country/vi.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-uy",
+    "name": "Country: Uruguay",
+    "file": "skins/country/uy.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-uz",
+    "name": "Country: Uzbekistan (Ouzb\u00e9kistan)",
+    "file": "skins/country/uz.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-vu",
+    "name": "Country: Vanuatu",
+    "file": "skins/country/vu.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-va",
+    "name": "Country: Vatican City (Cit\u00e9 du Vatican)",
+    "file": "skins/country/va.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ve",
+    "name": "Country: Venezuela",
+    "file": "skins/country/ve.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-vn",
+    "name": "Country: Vietnam (Vi\u00eat Nam)",
+    "file": "skins/country/vn.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-wf",
+    "name": "Country: Wallis and Futuna (Wallis-et-Futuna)",
+    "file": "skins/country/wf.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-eh",
+    "name": "Country: Western Sahara (Sahara Occidental)",
+    "file": "skins/country/eh.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ye",
+    "name": "Country: Yemen (Y\u00e9men)",
+    "file": "skins/country/ye.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-zm",
+    "name": "Country: Zambia (Zambie)",
+    "file": "skins/country/zm.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-zw",
+    "name": "Country: Zimbabwe",
+    "file": "skins/country/zw.json",
+    "group": "Countries"
+  },
+  {
+    "id": "c-ax",
+    "name": "Country: \u00c5land Islands (Ahvenanmaa)",
+    "file": "skins/country/ax.json",
+    "group": "Countries"
+  },
+  {
+    "id": "mine",
+    "name": "My style (starter, 4 layers)",
+    "file": "style.json",
+    "group": "Mine"
+  }
+]

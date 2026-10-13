@@ -1,0 +1,33 @@
+# My Map: your own tile server for the Missions app.
+#
+#   1. docker compose run --rm build      (once, ~10-20 min: downloads Morocco OSM data and builds tiles)
+#   2. docker compose up -d tiles         (serves the map at http://localhost:8081)
+#
+# Then point the Missions API at it: see README.md, step 3.
+
+services:
+  # One-shot: turns OpenStreetMap data for Morocco into data/morocco.mbtiles.
+  build:
+    image: ghcr.io/onthegomap/planetiler:latest
+    volumes:
+      - ./data:/data
+    command: >
+      --download
+      --area=morocco
+      --output=/data/morocco.mbtiles
+      --force
+    profiles: ["build"]
+
+  # Serves the tiles. PNG raster tiles for the app's current TileLayer, and
+  # vector tiles if you later move the app to MapLibre.
+  tiles:
+    image: maptiler/tileserver-gl:latest
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./config.json:/data/config.json:ro
+      - ./data:/data/data:ro
+      - ./styles:/data/styles:ro
+      - ./fonts:/data/fonts:ro
+    command: ["--config", "/data/config.json", "--public_url", "http://localhost:8081/"]
+    restart: unless-stopped

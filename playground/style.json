@@ -1,0 +1,54 @@
+{
+  "version": 8,
+  "name": "My first style",
+  "sources": {
+    "osm": {
+      "type": "vector",
+      "url": "https://tiles.openfreemap.org/planet"
+    }
+  },
+  "glyphs": "https://tiles.openfreemap.org/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://tiles.openfreemap.org/sprites/ofm_f384/ofm",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": { "background-color": "#f4efe6" }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "osm",
+      "source-layer": "water",
+      "paint": { "fill-color": "#a6cbe8" }
+    },
+    {
+      "id": "road-major",
+      "type": "line",
+      "source": "osm",
+      "source-layer": "transportation",
+      "filter": ["in", "class", "motorway", "trunk", "primary"],
+      "paint": {
+        "line-color": "#e8a33d",
+        "line-width": ["interpolate", ["linear"], ["zoom"], 5, 0.5, 10, 2, 14, 6]
+      }
+    },
+    {
+      "id": "place-city",
+      "type": "symbol",
+      "source": "osm",
+      "source-layer": "place",
+      "filter": ["==", "class", "city"],
+      "layout": {
+        "text-field": ["coalesce", ["get", "name:fr"], ["get", "name"]],
+        "text-font": ["Noto Sans Bold"],
+        "text-size": 14
+      },
+      "paint": {
+        "text-color": "#333333",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 1.5
+      }
+    }
+  ]
+}

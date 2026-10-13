@@ -1,0 +1,462 @@
+{
+  "options": {
+    "paths": {
+      "root": "/data",
+      "fonts": "fonts",
+      "styles": "styles",
+      "mbtiles": "data"
+    },
+    "formatQuality": {
+      "png": 90
+    },
+    "maxScaleFactor": 3,
+    "serveAllFonts": true
+  },
+  "styles": {
+    "missions": {
+      "style": "missions/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "frontier": {
+      "style": "frontier/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "empire": {
+      "style": "empire/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "cybershock": {
+      "style": "cybershock/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "cubeworld": {
+      "style": "cubeworld/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "wasteland": {
+      "style": "wasteland/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "sanandreas": {
+      "style": "sanandreas/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "zellige": {
+      "style": "zellige/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "sahara": {
+      "style": "sahara/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "medina": {
+      "style": "medina/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "chefchaouen": {
+      "style": "chefchaouen/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "atlas": {
+      "style": "atlas/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "amazigh": {
+      "style": "amazigh/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "ramadan": {
+      "style": "ramadan/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "essaouira": {
+      "style": "essaouira/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "tafraout": {
+      "style": "tafraout/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "relief": {
+      "style": "relief/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "minttea": {
+      "style": "minttea/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "argan": {
+      "style": "argan/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "ifrane": {
+      "style": "ifrane/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "dakhla": {
+      "style": "dakhla/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "caftan": {
+      "style": "caftan/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "blueprint": {
+      "style": "blueprint/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "sketch": {
+      "style": "sketch/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "noir": {
+      "style": "noir/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "casablanca": {
+      "style": "casablanca/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "rabat": {
+      "style": "rabat/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "fes": {
+      "style": "fes/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "tanger": {
+      "style": "tanger/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "agadir": {
+      "style": "agadir/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "meknes": {
+      "style": "meknes/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "tetouan": {
+      "style": "tetouan/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "oujda": {
+      "style": "oujda/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "ouarzazate": {
+      "style": "ouarzazate/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "eljadida": {
+      "style": "eljadida/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "laayoune": {
+      "style": "laayoune/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "kenitra": {
+      "style": "kenitra/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "safi": {
+      "style": "safi/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "nador": {
+      "style": "nador/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    },
+    "benimellal": {
+      "style": "benimellal/style.json",
+      "tilejson": {
+        "bounds": [
+          -17.5,
+          20.5,
+          -0.9,
+          36.1
+        ]
+      }
+    }
+  },
+  "data": {
+    "morocco": {
+      "mbtiles": "morocco.mbtiles"
+    }
+  }
+}

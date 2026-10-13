@@ -1,0 +1,7084 @@
+[
+ {
+  "code": "af",
+  "name": "Afghanistan",
+  "name_fr": "Afghanistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Kabul",
+  "center": [
+   69.1813,
+   34.5186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.376
+   ],
+   [
+    "#007a36",
+    0.296
+   ],
+   [
+    "#d32213",
+    0.188
+   ],
+   [
+    "#e06358",
+    0.074
+   ]
+  ]
+ },
+ {
+  "code": "al",
+  "name": "Albania",
+  "name_fr": "Albanie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Tirana",
+  "center": [
+   19.8189,
+   41.3275
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fe0000",
+    0.856
+   ],
+   [
+    "#000000",
+    0.101
+   ],
+   [
+    "#a10000",
+    0.032
+   ]
+  ]
+ },
+ {
+  "code": "dz",
+  "name": "Algeria",
+  "name_fr": "Algérie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Algiers",
+  "center": [
+   3.0486,
+   36.765
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.478
+   ],
+   [
+    "#006532",
+    0.457
+   ],
+   [
+    "#d11034",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "as",
+  "name": "American Samoa",
+  "name_fr": "Samoa américaines",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Pago Pago",
+  "center": [
+   -170,
+   -14.3333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#000065",
+    0.55
+   ],
+   [
+    "#fdfdfd",
+    0.294
+   ],
+   [
+    "#b80f22",
+    0.071
+   ],
+   [
+    "#5e2120",
+    0.062
+   ]
+  ]
+ },
+ {
+  "code": "ad",
+  "name": "Andorra",
+  "name_fr": "Andorre",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Andorra",
+  "center": [
+   1.5165,
+   42.5
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d50031",
+    0.323
+   ],
+   [
+    "#10069f",
+    0.312
+   ],
+   [
+    "#fcdb01",
+    0.252
+   ],
+   [
+    "#b49262",
+    0.059
+   ]
+  ]
+ },
+ {
+  "code": "ao",
+  "name": "Angola",
+  "name_fr": "Angola",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Luanda",
+  "center": [
+   13.2325,
+   -8.8363
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#cc092e",
+    0.474
+   ],
+   [
+    "#000000",
+    0.459
+   ],
+   [
+    "#fdc900",
+    0.033
+   ]
+  ]
+ },
+ {
+  "code": "ai",
+  "name": "Anguilla",
+  "name_fr": "Anguilla",
+  "region": "Americas",
+  "independent": false,
+  "capital": "The Valley",
+  "center": [
+   -63.1667,
+   18.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.76
+   ],
+   [
+    "#fbf5f5",
+    0.099
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#4c6396",
+    0.029
+   ]
+  ]
+ },
+ {
+  "code": "aq",
+  "name": "Antarctica",
+  "name_fr": "Antarctique",
+  "region": "Antarctic",
+  "independent": false,
+  "capital": null,
+  "center": [
+   0,
+   -90
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#009edb",
+    0.671
+   ],
+   [
+    "#fefefe",
+    0.306
+   ]
+  ]
+ },
+ {
+  "code": "ag",
+  "name": "Antigua and Barbuda",
+  "name_fr": "Antigua-et-Barbuda",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Saint John's",
+  "center": [
+   -61.85,
+   17.118
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#cd1126",
+    0.519
+   ],
+   [
+    "#020100",
+    0.253
+   ],
+   [
+    "#0072c6",
+    0.1
+   ],
+   [
+    "#fefdfd",
+    0.068
+   ]
+  ]
+ },
+ {
+  "code": "ar",
+  "name": "Argentina",
+  "name_fr": "Argentine",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Buenos Aires",
+  "center": [
+   -58.3995,
+   -34.6006
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#74acdf",
+    0.68
+   ],
+   [
+    "#fefefe",
+    0.287
+   ]
+  ]
+ },
+ {
+  "code": "am",
+  "name": "Armenia",
+  "name_fr": "Arménie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Yerevan",
+  "center": [
+   44.5116,
+   40.1831
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d90012",
+    0.325
+   ],
+   [
+    "#f2a800",
+    0.325
+   ],
+   [
+    "#0033a0",
+    0.3
+   ],
+   [
+    "#37267c",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "aw",
+  "name": "Aruba",
+  "name_fr": "Aruba",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Oranjestad",
+  "center": [
+   -69.9667,
+   12.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#418fde",
+    0.832
+   ],
+   [
+    "#efcb12",
+    0.113
+   ],
+   [
+    "#71a0a7",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "au",
+  "name": "Australia",
+  "name_fr": "Australie",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Canberra",
+  "center": [
+   149.129,
+   -35.283
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#012169",
+    0.772
+   ],
+   [
+    "#fafafb",
+    0.077
+   ],
+   [
+    "#e4002b",
+    0.077
+   ],
+   [
+    "#4b6195",
+    0.033
+   ]
+  ]
+ },
+ {
+  "code": "at",
+  "name": "Austria",
+  "name_fr": "Autriche",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Vienna",
+  "center": [
+   16.3647,
+   48.202
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c8102e",
+    0.642
+   ],
+   [
+    "#ffffff",
+    0.321
+   ],
+   [
+    "#db6074",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "az",
+  "name": "Azerbaijan",
+  "name_fr": "Azerbaïdjan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Baku",
+  "center": [
+   49.8603,
+   40.3972
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00b5e2",
+    0.325
+   ],
+   [
+    "#509e2f",
+    0.325
+   ],
+   [
+    "#ef3340",
+    0.28
+   ],
+   [
+    "#a05e76",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "bs",
+  "name": "Bahamas",
+  "name_fr": "Bahamas",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Nassau",
+  "center": [
+   -77.35,
+   25.0834
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00768a",
+    0.559
+   ],
+   [
+    "#000101",
+    0.215
+   ],
+   [
+    "#ffc72c",
+    0.188
+   ],
+   [
+    "#bfb344",
+    0.035
+   ]
+  ]
+ },
+ {
+  "code": "bh",
+  "name": "Bahrain",
+  "name_fr": "Bahreïn",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Manama",
+  "center": [
+   50.5831,
+   26.2361
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#da291c",
+    0.665
+   ],
+   [
+    "#fffefe",
+    0.319
+   ]
+  ]
+ },
+ {
+  "code": "bd",
+  "name": "Bangladesh",
+  "name_fr": "Bangladesh",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Dhaka",
+  "center": [
+   90.4066,
+   23.725
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#006a4e",
+    0.786
+   ],
+   [
+    "#f42a41",
+    0.205
+   ]
+  ]
+ },
+ {
+  "code": "bb",
+  "name": "Barbados",
+  "name_fr": "Barbade",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Bridgetown",
+  "center": [
+   -59.6165,
+   13.102
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00267f",
+    0.651
+   ],
+   [
+    "#ffc726",
+    0.278
+   ],
+   [
+    "#040300",
+    0.028
+   ],
+   [
+    "#555b60",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "by",
+  "name": "Belarus",
+  "name_fr": "Biélorussie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Minsk",
+  "center": [
+   27.5647,
+   53.9019
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1720",
+    0.633
+   ],
+   [
+    "#007c30",
+    0.284
+   ],
+   [
+    "#dc595f",
+    0.032
+   ],
+   [
+    "#ea9fa3",
+    0.024
+   ]
+  ]
+ },
+ {
+  "code": "be",
+  "name": "Belgium",
+  "name_fr": "Belgique",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Brussels",
+  "center": [
+   4.3314,
+   50.8353
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.325
+   ],
+   [
+    "#fdda25",
+    0.325
+   ],
+   [
+    "#ef3340",
+    0.338
+   ]
+  ]
+ },
+ {
+  "code": "bz",
+  "name": "Belize",
+  "name_fr": "Belize",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Belmopan",
+  "center": [
+   -88.7671,
+   17.252
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#171696",
+    0.668
+   ],
+   [
+    "#d90f19",
+    0.208
+   ],
+   [
+    "#e9ece8",
+    0.066
+   ],
+   [
+    "#accd9b",
+    0.033
+   ]
+  ]
+ },
+ {
+  "code": "bj",
+  "name": "Benin",
+  "name_fr": "Bénin",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Cotonou",
+  "center": [
+   2.518,
+   6.402
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#008751",
+    0.4
+   ],
+   [
+    "#fcd116",
+    0.294
+   ],
+   [
+    "#e8112d",
+    0.294
+   ]
+  ]
+ },
+ {
+  "code": "bm",
+  "name": "Bermuda",
+  "name_fr": "Bermudes",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Hamilton",
+  "center": [
+   -64.75,
+   32.3333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#c70f2d",
+    0.776
+   ],
+   [
+    "#f7f3f4",
+    0.115
+   ],
+   [
+    "#03236a",
+    0.052
+   ]
+  ]
+ },
+ {
+  "code": "bt",
+  "name": "Bhutan",
+  "name_fr": "Bhoutan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Thimphu",
+  "center": [
+   89.639,
+   27.473
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fecc01",
+    0.437
+   ],
+   [
+    "#fe671f",
+    0.391
+   ],
+   [
+    "#f2ede9",
+    0.116
+   ],
+   [
+    "#f1daa7",
+    0.033
+   ]
+  ]
+ },
+ {
+  "code": "bo",
+  "name": "Bolivia",
+  "name_fr": "Bolivie",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Sucre",
+  "center": [
+   -65.2595,
+   -19.041
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d22011",
+    0.355
+   ],
+   [
+    "#00702d",
+    0.329
+   ],
+   [
+    "#efe43b",
+    0.299
+   ]
+  ]
+ },
+ {
+  "code": "ba",
+  "name": "Bosnia and Herzegovina",
+  "name_fr": "Bosnie-Herzégovine",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Sarajevo",
+  "center": [
+   18.383,
+   43.85
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#002395",
+    0.672
+   ],
+   [
+    "#fdca00",
+    0.244
+   ],
+   [
+    "#eceff7",
+    0.025
+   ],
+   [
+    "#535a64",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "bw",
+  "name": "Botswana",
+  "name_fr": "Botswana",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Gaborone",
+  "center": [
+   25.9119,
+   -24.6463
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#6da9d2",
+    0.755
+   ],
+   [
+    "#000000",
+    0.17
+   ],
+   [
+    "#ffffff",
+    0.075
+   ]
+  ]
+ },
+ {
+  "code": "bv",
+  "name": "Bouvet Island",
+  "name_fr": "Île Bouvet",
+  "region": "Antarctic",
+  "independent": false,
+  "capital": null,
+  "center": [
+   3.4,
+   -54.4333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ba0c2f",
+    0.588
+   ],
+   [
+    "#00205b",
+    0.171
+   ],
+   [
+    "#fffefe",
+    0.15
+   ],
+   [
+    "#cd4f68",
+    0.037
+   ]
+  ]
+ },
+ {
+  "code": "br",
+  "name": "Brazil",
+  "name_fr": "Brésil",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Brasilia",
+  "center": [
+   -47.918,
+   -15.7814
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009440",
+    0.705
+   ],
+   [
+    "#fdca00",
+    0.165
+   ],
+   [
+    "#302681",
+    0.101
+   ]
+  ]
+ },
+ {
+  "code": "io",
+  "name": "British Indian Ocean Territory",
+  "name_fr": "Territoire britannique de l'océan Indien",
+  "region": "Africa",
+  "independent": false,
+  "capital": "Diego Garcia",
+  "center": [
+   71.5,
+   -6
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#f8f7f9",
+    0.447
+   ],
+   [
+    "#04236a",
+    0.32
+   ],
+   [
+    "#c7102d",
+    0.079
+   ],
+   [
+    "#516897",
+    0.106
+   ]
+  ]
+ },
+ {
+  "code": "vg",
+  "name": "British Virgin Islands",
+  "name_fr": "Îles Vierges britanniques",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Road Town",
+  "center": [
+   -64.6231,
+   18.4314
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.728
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#f8f2f3",
+    0.077
+   ],
+   [
+    "#136227",
+    0.049
+   ]
+  ]
+ },
+ {
+  "code": "bn",
+  "name": "Brunei",
+  "name_fr": "Brunei",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Bandar Seri Begawan",
+  "center": [
+   114.9333,
+   4.8833
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#f6df17",
+    0.574
+   ],
+   [
+    "#fdfdfc",
+    0.198
+   ],
+   [
+    "#020101",
+    0.158
+   ],
+   [
+    "#d12129",
+    0.049
+   ]
+  ]
+ },
+ {
+  "code": "bg",
+  "name": "Bulgaria",
+  "name_fr": "Bulgarie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Sofia",
+  "center": [
+   23.3147,
+   42.6853
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffffff",
+    0.333
+   ],
+   [
+    "#00966e",
+    0.333
+   ],
+   [
+    "#d62612",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "bf",
+  "name": "Burkina Faso",
+  "name_fr": "Burkina Faso",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Ouagadougou",
+  "center": [
+   -1.5267,
+   12.3723
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009e48",
+    0.48
+   ],
+   [
+    "#ef2b2c",
+    0.481
+   ]
+  ]
+ },
+ {
+  "code": "bi",
+  "name": "Burundi",
+  "name_fr": "Burundi",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Bujumbura",
+  "center": [
+   29.36,
+   -3.3761
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#43b02a",
+    0.348
+   ],
+   [
+    "#fdfdfc",
+    0.326
+   ],
+   [
+    "#c7102e",
+    0.285
+   ]
+  ]
+ },
+ {
+  "code": "kh",
+  "name": "Cambodia",
+  "name_fr": "Cambodge",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Phnom Penh",
+  "center": [
+   104.9147,
+   11.552
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#072d9e",
+    0.512
+   ],
+   [
+    "#df0025",
+    0.387
+   ],
+   [
+    "#d4d3d3",
+    0.068
+   ],
+   [
+    "#b5acae",
+    0.028
+   ]
+  ]
+ },
+ {
+  "code": "cm",
+  "name": "Cameroon",
+  "name_fr": "Cameroun",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Yaounde",
+  "center": [
+   11.5147,
+   3.8686
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fcd015",
+    0.336
+   ],
+   [
+    "#007a5e",
+    0.325
+   ],
+   [
+    "#ce1125",
+    0.309
+   ]
+  ]
+ },
+ {
+  "code": "ca",
+  "name": "Canada",
+  "name_fr": "Canada",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Ottawa",
+  "center": [
+   -75.702,
+   45.4186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.625
+   ],
+   [
+    "#fffefe",
+    0.347
+   ]
+  ]
+ },
+ {
+  "code": "cv",
+  "name": "Cape Verde",
+  "name_fr": "Îles du Cap-Vert",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Praia",
+  "center": [
+   -23.5167,
+   14.9167
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#003893",
+    0.727
+   ],
+   [
+    "#fdf6f6",
+    0.14
+   ],
+   [
+    "#cf2027",
+    0.064
+   ],
+   [
+    "#e78f92",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "bq",
+  "name": "Caribbean Netherlands",
+  "name_fr": "Pays-Bas caribéens",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Kralendijk",
+  "center": [
+   -68.25,
+   12.18
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#003087",
+    0.522
+   ],
+   [
+    "#fdfdfd",
+    0.351
+   ],
+   [
+    "#ffd700",
+    0.084
+   ]
+  ]
+ },
+ {
+  "code": "ky",
+  "name": "Cayman Islands",
+  "name_fr": "Îles Caïmans",
+  "region": "Americas",
+  "independent": false,
+  "capital": "George Town",
+  "center": [
+   -80.5,
+   19.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.77
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#f9f2f3",
+    0.074
+   ],
+   [
+    "#4d6594",
+    0.046
+   ]
+  ]
+ },
+ {
+  "code": "cf",
+  "name": "Central African Republic",
+  "name_fr": "République centrafricaine",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Bangui",
+  "center": [
+   18.5583,
+   4.3666
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fecd00",
+    0.241
+   ],
+   [
+    "#003082",
+    0.188
+   ],
+   [
+    "#ffffff",
+    0.187
+   ],
+   [
+    "#289728",
+    0.202
+   ]
+  ]
+ },
+ {
+  "code": "td",
+  "name": "Chad",
+  "name_fr": "Tchad",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Ndjamena",
+  "center": [
+   15.0472,
+   12.115
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#002664",
+    0.325
+   ],
+   [
+    "#fecb00",
+    0.325
+   ],
+   [
+    "#c60c30",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "cl",
+  "name": "Chile",
+  "name_fr": "Chili",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Santiago",
+  "center": [
+   -70.669,
+   -33.4481
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#da291c",
+    0.491
+   ],
+   [
+    "#fefefe",
+    0.336
+   ],
+   [
+    "#0032a0",
+    0.146
+   ]
+  ]
+ },
+ {
+  "code": "cn",
+  "name": "China",
+  "name_fr": "Chine",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Beijing",
+  "center": [
+   116.3863,
+   39.9308
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ee1c25",
+    0.967
+   ]
+  ]
+ },
+ {
+  "code": "cx",
+  "name": "Christmas Island",
+  "name_fr": "Île Christmas",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Flying Fish Cove",
+  "center": [
+   105.6667,
+   -10.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0daf2b",
+    0.459
+   ],
+   [
+    "#012169",
+    0.455
+   ],
+   [
+    "#efcf16",
+    0.054
+   ]
+  ]
+ },
+ {
+  "code": "cc",
+  "name": "Cocos (Keeling) Islands",
+  "name_fr": "Îles Cocos",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "West Island",
+  "center": [
+   96.8333,
+   -12.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#018000",
+    0.887
+   ],
+   [
+    "#f8dd00",
+    0.073
+   ],
+   [
+    "#5ea200",
+    0.03
+   ]
+  ]
+ },
+ {
+  "code": "co",
+  "name": "Colombia",
+  "name_fr": "Colombie",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Bogota",
+  "center": [
+   -74.0853,
+   4.5984
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffcd00",
+    0.491
+   ],
+   [
+    "#c8102e",
+    0.245
+   ],
+   [
+    "#003087",
+    0.245
+   ]
+  ]
+ },
+ {
+  "code": "km",
+  "name": "Comoros",
+  "name_fr": "Comores",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Moroni",
+  "center": [
+   43.2402,
+   -11.7042
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fed000",
+    0.237
+   ],
+   [
+    "#003da5",
+    0.216
+   ],
+   [
+    "#009539",
+    0.202
+   ],
+   [
+    "#fefefe",
+    0.181
+   ]
+  ]
+ },
+ {
+  "code": "cg",
+  "name": "Congo",
+  "name_fr": "Congo",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Brazzaville",
+  "center": [
+   15.2827,
+   -4.2572
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009543",
+    0.325
+   ],
+   [
+    "#fadd49",
+    0.325
+   ],
+   [
+    "#dc241f",
+    0.329
+   ]
+  ]
+ },
+ {
+  "code": "ck",
+  "name": "Cook Islands",
+  "name_fr": "Îles Cook",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Avarua",
+  "center": [
+   -159.7667,
+   -21.2333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.743
+   ],
+   [
+    "#f6f2f5",
+    0.093
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#4a6195",
+    0.043
+   ]
+  ]
+ },
+ {
+  "code": "cr",
+  "name": "Costa Rica",
+  "name_fr": "Costa Rica",
+  "region": "Americas",
+  "independent": true,
+  "capital": "San Jose",
+  "center": [
+   -84.086,
+   9.937
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.358
+   ],
+   [
+    "#001489",
+    0.333
+   ],
+   [
+    "#da291c",
+    0.296
+   ]
+  ]
+ },
+ {
+  "code": "hr",
+  "name": "Croatia",
+  "name_fr": "Croatie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Zagreb",
+  "center": [
+   16.0,
+   45.8
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#171795",
+    0.337
+   ],
+   [
+    "#fe0000",
+    0.312
+   ],
+   [
+    "#fffefe",
+    0.261
+   ],
+   [
+    "#fe9d9e",
+    0.042
+   ]
+  ]
+ },
+ {
+  "code": "cu",
+  "name": "Cuba",
+  "name_fr": "Cuba",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Havana",
+  "center": [
+   -82.3661,
+   23.1339
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00298e",
+    0.485
+   ],
+   [
+    "#fefefe",
+    0.308
+   ],
+   [
+    "#cb1515",
+    0.194
+   ]
+  ]
+ },
+ {
+  "code": "cw",
+  "name": "Curaçao",
+  "name_fr": "Curaçao",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Willemstad",
+  "center": [
+   -68.9333,
+   12.1167
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#002b7f",
+    0.851
+   ],
+   [
+    "#f9e814",
+    0.094
+   ],
+   [
+    "#bab92f",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "cy",
+  "name": "Cyprus",
+  "name_fr": "Chypre",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Nicosia",
+  "center": [
+   33.3666,
+   35.1667
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.865
+   ],
+   [
+    "#d67900",
+    0.105
+   ]
+  ]
+ },
+ {
+  "code": "cz",
+  "name": "Czechia",
+  "name_fr": "Tchéquie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Prague",
+  "center": [
+   14.464,
+   50.0853
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.375
+   ],
+   [
+    "#d6141a",
+    0.368
+   ],
+   [
+    "#11447d",
+    0.242
+   ]
+  ]
+ },
+ {
+  "code": "cd",
+  "name": "DR Congo",
+  "name_fr": "Congo (Rép. dém.)",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Kinshasa",
+  "center": [
+   15.313,
+   -4.3278
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#007fff",
+    0.663
+   ],
+   [
+    "#ce1120",
+    0.19
+   ],
+   [
+    "#f4d41a",
+    0.113
+   ]
+  ]
+ },
+ {
+  "code": "dk",
+  "name": "Denmark",
+  "name_fr": "Danemark",
+  "region": "Europe",
+  "independent": true,
+  "capital": "København",
+  "center": [
+   12.5615,
+   55.6805
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c8102e",
+    0.757
+   ],
+   [
+    "#fffefe",
+    0.204
+   ],
+   [
+    "#f1c4cb",
+    0.04
+   ]
+  ]
+ },
+ {
+  "code": "dj",
+  "name": "Djibouti",
+  "name_fr": "Djibouti",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Djibouti",
+  "center": [
+   43.148,
+   11.595
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#6ab2e7",
+    0.356
+   ],
+   [
+    "#12ad2b",
+    0.347
+   ],
+   [
+    "#fdfefd",
+    0.27
+   ]
+  ]
+ },
+ {
+  "code": "dm",
+  "name": "Dominica",
+  "name_fr": "Dominique",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Roseau",
+  "center": [
+   -61.387,
+   15.301
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#046937",
+    0.673
+   ],
+   [
+    "#1b180d",
+    0.088
+   ],
+   [
+    "#fefefe",
+    0.077
+   ],
+   [
+    "#ffcc00",
+    0.076
+   ]
+  ]
+ },
+ {
+  "code": "do",
+  "name": "Dominican Republic",
+  "name_fr": "République dominicaine",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Santo Domingo",
+  "center": [
+   -69.902,
+   18.472
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#002d62",
+    0.35
+   ],
+   [
+    "#ce1126",
+    0.337
+   ],
+   [
+    "#fdfafb",
+    0.269
+   ]
+  ]
+ },
+ {
+  "code": "ec",
+  "name": "Ecuador",
+  "name_fr": "Équateur",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Quito",
+  "center": [
+   -78.502,
+   -0.213
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fedc00",
+    0.496
+   ],
+   [
+    "#ec1c24",
+    0.249
+   ],
+   [
+    "#084d9e",
+    0.211
+   ],
+   [
+    "#8c9650",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "eg",
+  "name": "Egypt",
+  "name_fr": "Égypte",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Cairo",
+  "center": [
+   31.248,
+   30.0519
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.321
+   ],
+   [
+    "#000000",
+    0.321
+   ],
+   [
+    "#fefefc",
+    0.295
+   ]
+  ]
+ },
+ {
+  "code": "sv",
+  "name": "El Salvador",
+  "name_fr": "Salvador",
+  "region": "Americas",
+  "independent": true,
+  "capital": "San Salvador",
+  "center": [
+   -89.205,
+   13.7119
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#0047ab",
+    0.674
+   ],
+   [
+    "#fefefd",
+    0.304
+   ]
+  ]
+ },
+ {
+  "code": "gq",
+  "name": "Equatorial Guinea",
+  "name_fr": "Guinée équatoriale",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Malabo",
+  "center": [
+   8.7833,
+   3.75
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#3d9900",
+    0.31
+   ],
+   [
+    "#e22118",
+    0.293
+   ],
+   [
+    "#fafafa",
+    0.24
+   ],
+   [
+    "#0073cd",
+    0.121
+   ]
+  ]
+ },
+ {
+  "code": "er",
+  "name": "Eritrea",
+  "name_fr": "Érythrée",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Asmara",
+  "center": [
+   38.9333,
+   15.3333
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#e3022a",
+    0.444
+   ],
+   [
+    "#43af29",
+    0.244
+   ],
+   [
+    "#418fde",
+    0.237
+   ],
+   [
+    "#fa9f2a",
+    0.044
+   ]
+  ]
+ },
+ {
+  "code": "ee",
+  "name": "Estonia",
+  "name_fr": "Estonie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Tallinn",
+  "center": [
+   24.728,
+   59.4339
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#0072ce",
+    0.333
+   ],
+   [
+    "#000000",
+    0.333
+   ],
+   [
+    "#ffffff",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "sz",
+  "name": "Eswatini",
+  "name_fr": "Eswatini",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Mbabane",
+  "center": [
+   31.1333,
+   -26.3167
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#3d5db8",
+    0.424
+   ],
+   [
+    "#af0d0c",
+    0.338
+   ],
+   [
+    "#ffd900",
+    0.113
+   ],
+   [
+    "#f4f3f3",
+    0.049
+   ]
+  ]
+ },
+ {
+  "code": "et",
+  "name": "Ethiopia",
+  "name_fr": "Éthiopie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Addis Ababa",
+  "center": [
+   38.6981,
+   9.0353
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#068830",
+    0.317
+   ],
+   [
+    "#d9121a",
+    0.29
+   ],
+   [
+    "#fadc09",
+    0.229
+   ],
+   [
+    "#1249ab",
+    0.121
+   ]
+  ]
+ },
+ {
+  "code": "fk",
+  "name": "Falkland Islands",
+  "name_fr": "Îles Malouines",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Stanley",
+  "center": [
+   -59,
+   -51.75
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.746
+   ],
+   [
+    "#f4f1f2",
+    0.084
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#50689b",
+    0.029
+   ]
+  ]
+ },
+ {
+  "code": "fo",
+  "name": "Faroe Islands",
+  "name_fr": "Îles Féroé",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Tórshavn",
+  "center": [
+   -7,
+   62
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ffffff",
+    0.588
+   ],
+   [
+    "#ee3340",
+    0.172
+   ],
+   [
+    "#005eb8",
+    0.15
+   ],
+   [
+    "#90436e",
+    0.053
+   ]
+  ]
+ },
+ {
+  "code": "fj",
+  "name": "Fiji",
+  "name_fr": "Fidji",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Suva",
+  "center": [
+   178.4417,
+   -18.133
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#61b4e4",
+    0.704
+   ],
+   [
+    "#c8102e",
+    0.098
+   ],
+   [
+    "#f6f0f1",
+    0.089
+   ],
+   [
+    "#03226a",
+    0.052
+   ]
+  ]
+ },
+ {
+  "code": "fi",
+  "name": "Finland",
+  "name_fr": "Finlande",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Helsinki",
+  "center": [
+   24.9322,
+   60.1775
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffffff",
+    0.572
+   ],
+   [
+    "#002f6c",
+    0.376
+   ],
+   [
+    "#bfcada",
+    0.034
+   ]
+  ]
+ },
+ {
+  "code": "fr",
+  "name": "France",
+  "name_fr": "France",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Paris",
+  "center": [
+   2.3314,
+   48.8686
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#002654",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#ce1126",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "gf",
+  "name": "French Guiana",
+  "name_fr": "Guyane",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Cayenne",
+  "center": [
+   -53,
+   4
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fbdc09",
+    0.489
+   ],
+   [
+    "#078930",
+    0.482
+   ]
+  ]
+ },
+ {
+  "code": "pf",
+  "name": "French Polynesia",
+  "name_fr": "Polynésie française",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Papeetē",
+  "center": [
+   -140,
+   -15
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#cd1025",
+    0.529
+   ],
+   [
+    "#fdf8f8",
+    0.424
+   ]
+  ]
+ },
+ {
+  "code": "tf",
+  "name": "French Southern and Antarctic Lands",
+  "name_fr": "Terres australes et antarctiques françaises",
+  "region": "Antarctic",
+  "independent": false,
+  "capital": "Port-aux-Français",
+  "center": [
+   69.167,
+   -49.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#214d9b",
+    0.782
+   ],
+   [
+    "#fbfafc",
+    0.107
+   ],
+   [
+    "#eb2e2e",
+    0.071
+   ],
+   [
+    "#5275b1",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "ga",
+  "name": "Gabon",
+  "name_fr": "Gabon",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Libreville",
+  "center": [
+   9.458,
+   0.3854
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009e60",
+    0.333
+   ],
+   [
+    "#fcd116",
+    0.333
+   ],
+   [
+    "#3a75c4",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "gm",
+  "name": "Gambia",
+  "name_fr": "Gambie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Banjul",
+  "center": [
+   -16.5917,
+   13.4539
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.321
+   ],
+   [
+    "#3a7728",
+    0.321
+   ],
+   [
+    "#0c1c8c",
+    0.208
+   ],
+   [
+    "#ffffff",
+    0.075
+   ]
+  ]
+ },
+ {
+  "code": "ge",
+  "name": "Georgia",
+  "name_fr": "Géorgie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Tbilisi",
+  "center": [
+   44.7888,
+   41.727
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fffefe",
+    0.609
+   ],
+   [
+    "#ff0000",
+    0.321
+   ],
+   [
+    "#ff3f3f",
+    0.039
+   ],
+   [
+    "#ffa9a9",
+    0.031
+   ]
+  ]
+ },
+ {
+  "code": "de",
+  "name": "Germany",
+  "name_fr": "Allemagne",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Berlin",
+  "center": [
+   13.3996,
+   52.5238
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.333
+   ],
+   [
+    "#dd0000",
+    0.333
+   ],
+   [
+    "#ffce00",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "gh",
+  "name": "Ghana",
+  "name_fr": "Ghana",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Accra",
+  "center": [
+   -0.2187,
+   5.552
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1125",
+    0.34
+   ],
+   [
+    "#006b3f",
+    0.321
+   ],
+   [
+    "#fbd015",
+    0.289
+   ],
+   [
+    "#050400",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "gi",
+  "name": "Gibraltar",
+  "name_fr": "Gibraltar",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Gibraltar",
+  "center": [
+   -5.35,
+   36.1333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fefcfc",
+    0.547
+   ],
+   [
+    "#d9000b",
+    0.403
+   ]
+  ]
+ },
+ {
+  "code": "gr",
+  "name": "Greece",
+  "name_fr": "Grèce",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Athens",
+  "center": [
+   23.7314,
+   37.9853
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#0d5eaf",
+    0.518
+   ],
+   [
+    "#ffffff",
+    0.371
+   ],
+   [
+    "#c4d7eb",
+    0.043
+   ],
+   [
+    "#4a87c3",
+    0.039
+   ]
+  ]
+ },
+ {
+  "code": "gl",
+  "name": "Greenland",
+  "name_fr": "Groenland",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Nuuk",
+  "center": [
+   -40,
+   72
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#c8102e",
+    0.485
+   ],
+   [
+    "#fffefe",
+    0.486
+   ],
+   [
+    "#e48b9a",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "gd",
+  "name": "Grenada",
+  "name_fr": "Grenade",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Saint George's",
+  "center": [
+   -61.7416,
+   12.0526
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1125",
+    0.366
+   ],
+   [
+    "#fbd016",
+    0.289
+   ],
+   [
+    "#007a5d",
+    0.26
+   ],
+   [
+    "#b3552b",
+    0.076
+   ]
+  ]
+ },
+ {
+  "code": "gp",
+  "name": "Guadeloupe",
+  "name_fr": "Guadeloupe",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Basse-Terre",
+  "center": [
+   -61.5833,
+   16.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#000300",
+    0.503
+   ],
+   [
+    "#002488",
+    0.271
+   ],
+   [
+    "#f9db09",
+    0.15
+   ],
+   [
+    "#015900",
+    0.024
+   ]
+  ]
+ },
+ {
+  "code": "gu",
+  "name": "Guam",
+  "name_fr": "Guam",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Hagåtña",
+  "center": [
+   144.7833,
+   13.4667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#00287a",
+    0.817
+   ],
+   [
+    "#c62139",
+    0.149
+   ],
+   [
+    "#94d5f3",
+    0.026
+   ]
+  ]
+ },
+ {
+  "code": "gt",
+  "name": "Guatemala",
+  "name_fr": "Guatemala",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Guatemala",
+  "center": [
+   -90.5289,
+   14.6231
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#4997d0",
+    0.654
+   ],
+   [
+    "#fdfdfd",
+    0.289
+   ],
+   [
+    "#85b9df",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "gg",
+  "name": "Guernsey",
+  "name_fr": "Guernesey",
+  "region": "Europe",
+  "independent": false,
+  "capital": "St. Peter Port",
+  "center": [
+   -2.5833,
+   49.4667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ffffff",
+    0.607
+   ],
+   [
+    "#e8112d",
+    0.27
+   ],
+   [
+    "#f9dd16",
+    0.082
+   ]
+  ]
+ },
+ {
+  "code": "gn",
+  "name": "Guinea",
+  "name_fr": "Guinée",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Conakry",
+  "center": [
+   -13.6822,
+   9.5335
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.325
+   ],
+   [
+    "#fcd116",
+    0.325
+   ],
+   [
+    "#009460",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "gw",
+  "name": "Guinea-Bissau",
+  "name_fr": "Guinée-Bissau",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Bissau",
+  "center": [
+   -15.5984,
+   11.865
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fcd116",
+    0.331
+   ],
+   [
+    "#009e49",
+    0.331
+   ],
+   [
+    "#ce1126",
+    0.315
+   ]
+  ]
+ },
+ {
+  "code": "gy",
+  "name": "Guyana",
+  "name_fr": "Guyana",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Georgetown",
+  "center": [
+   -58.167,
+   6.802
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#2a936a",
+    0.519
+   ],
+   [
+    "#bc1d2c",
+    0.212
+   ],
+   [
+    "#ffc20f",
+    0.163
+   ],
+   [
+    "#fcfaf1",
+    0.046
+   ]
+  ]
+ },
+ {
+  "code": "ht",
+  "name": "Haiti",
+  "name_fr": "Haïti",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Port-au-Prince",
+  "center": [
+   -72.338,
+   18.543
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00209f",
+    0.472
+   ],
+   [
+    "#d11034",
+    0.414
+   ],
+   [
+    "#fbfbfa",
+    0.073
+   ]
+  ]
+ },
+ {
+  "code": "hm",
+  "name": "Heard Island and McDonald Islands",
+  "name_fr": "Îles Heard-et-MacDonald",
+  "region": "Antarctic",
+  "independent": false,
+  "capital": null,
+  "center": [
+   72.5167,
+   -53.1
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#00008b",
+    0.769
+   ],
+   [
+    "#faf9fb",
+    0.077
+   ],
+   [
+    "#ff0000",
+    0.077
+   ],
+   [
+    "#4c4cae",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "hn",
+  "name": "Honduras",
+  "name_fr": "Honduras",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Tegucigalpa",
+  "center": [
+   -87.2195,
+   14.104
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00bce4",
+    0.655
+   ],
+   [
+    "#fefeff",
+    0.287
+   ],
+   [
+    "#bfeef8",
+    0.056
+   ]
+  ]
+ },
+ {
+  "code": "hk",
+  "name": "Hong Kong",
+  "name_fr": "Hong Kong",
+  "region": "Asia",
+  "independent": false,
+  "capital": "City of Victoria",
+  "center": [
+   114.188,
+   22.267
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ee1c25",
+    0.895
+   ],
+   [
+    "#fef5f6",
+    0.076
+   ]
+  ]
+ },
+ {
+  "code": "hu",
+  "name": "Hungary",
+  "name_fr": "Hongrie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Budapest",
+  "center": [
+   19.0814,
+   47.502
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce2939",
+    0.325
+   ],
+   [
+    "#477050",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.3
+   ],
+   [
+    "#f3c9cd",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "is",
+  "name": "Iceland",
+  "name_fr": "Islande",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Reykjavík",
+  "center": [
+   -21.95,
+   64.15
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#02529c",
+    0.626
+   ],
+   [
+    "#dc1e35",
+    0.171
+   ],
+   [
+    "#fefeff",
+    0.113
+   ],
+   [
+    "#87adcf",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "in",
+  "name": "India",
+  "name_fr": "Inde",
+  "region": "Asia",
+  "independent": true,
+  "capital": "New Delhi",
+  "center": [
+   77.2,
+   28.6
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff6820",
+    0.323
+   ],
+   [
+    "#046a38",
+    0.321
+   ],
+   [
+    "#fcfcfd",
+    0.287
+   ]
+  ]
+ },
+ {
+  "code": "id",
+  "name": "Indonesia",
+  "name_fr": "Indonésie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Jakarta",
+  "center": [
+   106.8275,
+   -6.1725
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.491
+   ],
+   [
+    "#ffffff",
+    0.491
+   ]
+  ]
+ },
+ {
+  "code": "ir",
+  "name": "Iran",
+  "name_fr": "Iran",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Tehran",
+  "center": [
+   51.4224,
+   35.6739
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fcfaf9",
+    0.338
+   ],
+   [
+    "#da0202",
+    0.286
+   ],
+   [
+    "#239f40",
+    0.284
+   ],
+   [
+    "#e86464",
+    0.048
+   ]
+  ]
+ },
+ {
+  "code": "iq",
+  "name": "Iraq",
+  "name_fr": "Irak",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Baghdad",
+  "center": [
+   44.3919,
+   33.3406
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#cd1125",
+    0.334
+   ],
+   [
+    "#000000",
+    0.321
+   ],
+   [
+    "#fdfefe",
+    0.284
+   ]
+  ]
+ },
+ {
+  "code": "ie",
+  "name": "Ireland",
+  "name_fr": "Irlande",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Dublin",
+  "center": [
+   -6.2509,
+   53.335
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#169b62",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#ff883e",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "im",
+  "name": "Isle of Man",
+  "name_fr": "Île de Man",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Douglas",
+  "center": [
+   -4.5,
+   54.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ce132a",
+    0.947
+   ],
+   [
+    "#e5e3e3",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "il",
+  "name": "Israel",
+  "name_fr": "Israël",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Jerusalem",
+  "center": [
+   35.2066,
+   31.7784
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.598
+   ],
+   [
+    "#0038b8",
+    0.305
+   ],
+   [
+    "#7e9ada",
+    0.075
+   ]
+  ]
+ },
+ {
+  "code": "it",
+  "name": "Italy",
+  "name_fr": "Italie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Rome",
+  "center": [
+   12.4813,
+   41.8979
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009246",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#ce2b37",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "ci",
+  "name": "Ivory Coast",
+  "name_fr": "Côte d'Ivoire",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Yamoussoukro",
+  "center": [
+   -5.2755,
+   6.8184
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#f77f00",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#009e60",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "jm",
+  "name": "Jamaica",
+  "name_fr": "Jamaïque",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Kingston",
+  "center": [
+   -76.7674,
+   17.9771
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#017749",
+    0.32
+   ],
+   [
+    "#000000",
+    0.32
+   ],
+   [
+    "#ffb81c",
+    0.319
+   ],
+   [
+    "#7b9633",
+    0.02
+   ]
+  ]
+ },
+ {
+  "code": "jp",
+  "name": "Japan",
+  "name_fr": "Japon",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Tokyo",
+  "center": [
+   139.7495,
+   35.687
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.805
+   ],
+   [
+    "#bc002d",
+    0.183
+   ]
+  ]
+ },
+ {
+  "code": "je",
+  "name": "Jersey",
+  "name_fr": "Jersey",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Saint Helier",
+  "center": [
+   -2.1667,
+   49.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fefdfd",
+    0.717
+   ],
+   [
+    "#cf152b",
+    0.217
+   ],
+   [
+    "#eca0a7",
+    0.03
+   ]
+  ]
+ },
+ {
+  "code": "jo",
+  "name": "Jordan",
+  "name_fr": "Jordanie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Amman",
+  "center": [
+   35.9314,
+   31.952
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00793c",
+    0.275
+   ],
+   [
+    "#000000",
+    0.272
+   ],
+   [
+    "#ce1126",
+    0.239
+   ],
+   [
+    "#fefdfd",
+    0.176
+   ]
+  ]
+ },
+ {
+  "code": "kz",
+  "name": "Kazakhstan",
+  "name_fr": "Kazakhstan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Astana",
+  "center": [
+   71.4278,
+   51.1811
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00abc2",
+    0.874
+   ],
+   [
+    "#9cd365",
+    0.065
+   ],
+   [
+    "#fdeb2e",
+    0.026
+   ],
+   [
+    "#62c387",
+    0.035
+   ]
+  ]
+ },
+ {
+  "code": "ke",
+  "name": "Kenya",
+  "name_fr": "Kenya",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Nairobi",
+  "center": [
+   36.8147,
+   -1.2814
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.304
+   ],
+   [
+    "#006500",
+    0.291
+   ],
+   [
+    "#ba0000",
+    0.272
+   ],
+   [
+    "#fefefe",
+    0.068
+   ]
+  ]
+ },
+ {
+  "code": "ki",
+  "name": "Kiribati",
+  "name_fr": "Kiribati",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Tarawa",
+  "center": [
+   173.0176,
+   1.3382
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c7100f",
+    0.477
+   ],
+   [
+    "#f9f9fa",
+    0.211
+   ],
+   [
+    "#183070",
+    0.177
+   ],
+   [
+    "#f4cb00",
+    0.056
+   ]
+  ]
+ },
+ {
+  "code": "xk",
+  "name": "Kosovo",
+  "name_fr": "Kosovo",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Pristina",
+  "center": [
+   21.1667,
+   42.6667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#244aa5",
+    0.873
+   ],
+   [
+    "#cfa550",
+    0.103
+   ]
+  ]
+ },
+ {
+  "code": "kw",
+  "name": "Kuwait",
+  "name_fr": "Koweït",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Kuwait",
+  "center": [
+   47.9764,
+   29.3717
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#007a3d",
+    0.285
+   ],
+   [
+    "#ce1126",
+    0.285
+   ],
+   [
+    "#ffffff",
+    0.225
+   ],
+   [
+    "#000000",
+    0.167
+   ]
+  ]
+ },
+ {
+  "code": "kg",
+  "name": "Kyrgyzstan",
+  "name_fr": "Kirghizistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Bishkek",
+  "center": [
+   74.5833,
+   42.875
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.888
+   ],
+   [
+    "#ff5d00",
+    0.052
+   ],
+   [
+    "#ffe000",
+    0.034
+   ],
+   [
+    "#ffa400",
+    0.026
+   ]
+  ]
+ },
+ {
+  "code": "la",
+  "name": "Laos",
+  "name_fr": "Laos",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Vientiane",
+  "center": [
+   102.6,
+   17.9667
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.491
+   ],
+   [
+    "#042766",
+    0.422
+   ],
+   [
+    "#fcfdfd",
+    0.079
+   ]
+  ]
+ },
+ {
+  "code": "lv",
+  "name": "Latvia",
+  "name_fr": "Lettonie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Riga",
+  "center": [
+   24.1,
+   56.95
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#9d2235",
+    0.8
+   ],
+   [
+    "#ffffff",
+    0.2
+   ]
+  ]
+ },
+ {
+  "code": "lb",
+  "name": "Lebanon",
+  "name_fr": "Liban",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Beirut",
+  "center": [
+   35.5078,
+   33.8739
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d31624",
+    0.496
+   ],
+   [
+    "#fdf9f9",
+    0.427
+   ],
+   [
+    "#008c3e",
+    0.059
+   ]
+  ]
+ },
+ {
+  "code": "ls",
+  "name": "Lesotho",
+  "name_fr": "Lesotho",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Maseru",
+  "center": [
+   27.4833,
+   -29.3167
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.351
+   ],
+   [
+    "#001489",
+    0.302
+   ],
+   [
+    "#009a44",
+    0.302
+   ],
+   [
+    "#010101",
+    0.02
+   ]
+  ]
+ },
+ {
+  "code": "lr",
+  "name": "Liberia",
+  "name_fr": "Liberia",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Monrovia",
+  "center": [
+   -10.7997,
+   6.3146
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fdf8f9",
+    0.401
+   ],
+   [
+    "#be0a30",
+    0.378
+   ],
+   [
+    "#002868",
+    0.092
+   ],
+   [
+    "#cf4864",
+    0.083
+   ]
+  ]
+ },
+ {
+  "code": "ly",
+  "name": "Libya",
+  "name_fr": "Libye",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Tripoli",
+  "center": [
+   13.18,
+   32.8925
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.484
+   ],
+   [
+    "#e70013",
+    0.25
+   ],
+   [
+    "#239e46",
+    0.25
+   ]
+  ]
+ },
+ {
+  "code": "li",
+  "name": "Liechtenstein",
+  "name_fr": "Liechtenstein",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Vaduz",
+  "center": [
+   9.5167,
+   47.1337
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.505
+   ],
+   [
+    "#002a7e",
+    0.459
+   ]
+  ]
+ },
+ {
+  "code": "lt",
+  "name": "Lithuania",
+  "name_fr": "Lituanie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Vilnius",
+  "center": [
+   25.3166,
+   54.6834
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fdb913",
+    0.333
+   ],
+   [
+    "#006a44",
+    0.333
+   ],
+   [
+    "#c1272d",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "lu",
+  "name": "Luxembourg",
+  "name_fr": "Luxembourg",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Luxembourg",
+  "center": [
+   6.13,
+   49.6117
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ed2939",
+    0.333
+   ],
+   [
+    "#ffffff",
+    0.333
+   ],
+   [
+    "#00a1de",
+    0.333
+   ]
+  ]
+ },
+ {
+  "code": "mo",
+  "name": "Macau",
+  "name_fr": "Macao",
+  "region": "Asia",
+  "independent": false,
+  "capital": null,
+  "center": [
+   113.55,
+   22.1667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0f7562",
+    0.902
+   ],
+   [
+    "#f2f7f6",
+    0.045
+   ],
+   [
+    "#559d90",
+    0.023
+   ],
+   [
+    "#86b9b0",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "mg",
+  "name": "Madagascar",
+  "name_fr": "Madagascar",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Antananarivo",
+  "center": [
+   47.5147,
+   -18.9147
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#fc3d32",
+    0.325
+   ],
+   [
+    "#007e3a",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "mw",
+  "name": "Malawi",
+  "name_fr": "Malawi",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Lilongwe",
+  "center": [
+   33.7833,
+   -13.9833
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.358
+   ],
+   [
+    "#339e35",
+    0.34
+   ],
+   [
+    "#000000",
+    0.275
+   ],
+   [
+    "#630611",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "my",
+  "name": "Malaysia",
+  "name_fr": "Malaisie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Kuala Lumpur",
+  "center": [
+   101.698,
+   3.1686
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce0e0e",
+    0.334
+   ],
+   [
+    "#ffffff",
+    0.25
+   ],
+   [
+    "#040163",
+    0.239
+   ],
+   [
+    "#e57f7f",
+    0.075
+   ]
+  ]
+ },
+ {
+  "code": "mv",
+  "name": "Maldives",
+  "name_fr": "Maldives",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Male",
+  "center": [
+   73.4999,
+   4.1667
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d21034",
+    0.656
+   ],
+   [
+    "#007e3a",
+    0.316
+   ]
+  ]
+ },
+ {
+  "code": "ml",
+  "name": "Mali",
+  "name_fr": "Mali",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Bamako",
+  "center": [
+   -8.002,
+   12.652
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#14b53a",
+    0.325
+   ],
+   [
+    "#fcd116",
+    0.325
+   ],
+   [
+    "#ce1126",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "mt",
+  "name": "Malta",
+  "name_fr": "Malte",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Valletta",
+  "center": [
+   14.5147,
+   35.8997
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#cf142b",
+    0.5
+   ],
+   [
+    "#fefefe",
+    0.481
+   ]
+  ]
+ },
+ {
+  "code": "mh",
+  "name": "Marshall Islands",
+  "name_fr": "Îles Marshall",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Majuro",
+  "center": [
+   171.38,
+   7.103
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#003892",
+    0.759
+   ],
+   [
+    "#fafafb",
+    0.117
+   ],
+   [
+    "#dc7400",
+    0.085
+   ]
+  ]
+ },
+ {
+  "code": "mq",
+  "name": "Martinique",
+  "name_fr": "Martinique",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Fort-de-France",
+  "center": [
+   -61,
+   14.6667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#00a54f",
+    0.368
+   ],
+   [
+    "#231e1e",
+    0.37
+   ],
+   [
+    "#ee1922",
+    0.244
+   ]
+  ]
+ },
+ {
+  "code": "mr",
+  "name": "Mauritania",
+  "name_fr": "Mauritanie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Nouakchott",
+  "center": [
+   -15.9753,
+   18.0864
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00a85b",
+    0.522
+   ],
+   [
+    "#d01c1f",
+    0.377
+   ],
+   [
+    "#f7d502",
+    0.046
+   ],
+   [
+    "#67633d",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "mu",
+  "name": "Mauritius",
+  "name_fr": "Île Maurice",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Port Louis",
+  "center": [
+   57.5,
+   -20.1666
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ea2839",
+    0.245
+   ],
+   [
+    "#00a551",
+    0.245
+   ],
+   [
+    "#1a206d",
+    0.245
+   ],
+   [
+    "#ffd500",
+    0.226
+   ]
+  ]
+ },
+ {
+  "code": "yt",
+  "name": "Mayotte",
+  "name_fr": "Mayotte",
+  "region": "Africa",
+  "independent": false,
+  "capital": "Mamoudzou",
+  "center": [
+   45.1667,
+   -12.8333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#f9f9f9",
+    0.806
+   ],
+   [
+    "#a2a1a2",
+    0.081
+   ],
+   [
+    "#d12d11",
+    0.042
+   ],
+   [
+    "#171793",
+    0.032
+   ]
+  ]
+ },
+ {
+  "code": "mx",
+  "name": "Mexico",
+  "name_fr": "Mexique",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Mexico City",
+  "center": [
+   -99.1329,
+   19.4444
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#006847",
+    0.358
+   ],
+   [
+    "#ce1126",
+    0.325
+   ],
+   [
+    "#fdfdfd",
+    0.269
+   ]
+  ]
+ },
+ {
+  "code": "fm",
+  "name": "Micronesia",
+  "name_fr": "Micronésie",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Palikir",
+  "center": [
+   158.15,
+   6.9166
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#75b2dd",
+    0.971
+   ],
+   [
+    "#fbfcfe",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "md",
+  "name": "Moldova",
+  "name_fr": "Moldavie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Chisinau",
+  "center": [
+   28.8577,
+   47.005
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#cc092f",
+    0.361
+   ],
+   [
+    "#0046ae",
+    0.326
+   ],
+   [
+    "#fed100",
+    0.236
+   ],
+   [
+    "#8b6a14",
+    0.048
+   ]
+  ]
+ },
+ {
+  "code": "mc",
+  "name": "Monaco",
+  "name_fr": "Monaco",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Monaco",
+  "center": [
+   7.4069,
+   43.7396
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.5
+   ],
+   [
+    "#ffffff",
+    0.5
+   ]
+  ]
+ },
+ {
+  "code": "mn",
+  "name": "Mongolia",
+  "name_fr": "Mongolie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Ulaanbaatar",
+  "center": [
+   106.9147,
+   47.9186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#da2031",
+    0.568
+   ],
+   [
+    "#0066b2",
+    0.325
+   ],
+   [
+    "#ffd300",
+    0.064
+   ],
+   [
+    "#90375b",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "me",
+  "name": "Montenegro",
+  "name_fr": "Monténégro",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Podgorica",
+  "center": [
+   19.2663,
+   42.466
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#e20100",
+    0.749
+   ],
+   [
+    "#ffc000",
+    0.212
+   ],
+   [
+    "#e3690c",
+    0.023
+   ]
+  ]
+ },
+ {
+  "code": "ms",
+  "name": "Montserrat",
+  "name_fr": "Montserrat",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Plymouth",
+  "center": [
+   -62.2,
+   16.75
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.746
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#faf2f4",
+    0.068
+   ],
+   [
+    "#06a1d9",
+    0.044
+   ]
+  ]
+ },
+ {
+  "code": "ma",
+  "name": "Morocco",
+  "name_fr": "Maroc",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Rabat",
+  "center": [
+   -6.8364,
+   34.0253
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c1272d",
+    0.961
+   ],
+   [
+    "#056032",
+    0.024
+   ]
+  ]
+ },
+ {
+  "code": "mz",
+  "name": "Mozambique",
+  "name_fr": "Mozambique",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Maputo",
+  "center": [
+   32.5872,
+   -25.9533
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fbe000",
+    0.3
+   ],
+   [
+    "#007067",
+    0.26
+   ],
+   [
+    "#090808",
+    0.211
+   ],
+   [
+    "#d11033",
+    0.171
+   ]
+  ]
+ },
+ {
+  "code": "mm",
+  "name": "Myanmar",
+  "name_fr": "Birmanie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Naypyidaw",
+  "center": [
+   96.1167,
+   19.7685
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fecb00",
+    0.325
+   ],
+   [
+    "#ea2839",
+    0.3
+   ],
+   [
+    "#34b233",
+    0.24
+   ],
+   [
+    "#fafcf8",
+    0.1
+   ]
+  ]
+ },
+ {
+  "code": "na",
+  "name": "Namibia",
+  "name_fr": "Namibie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Windhoek",
+  "center": [
+   17.0835,
+   -22.57
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009543",
+    0.359
+   ],
+   [
+    "#003580",
+    0.268
+   ],
+   [
+    "#d21034",
+    0.263
+   ],
+   [
+    "#f8f5f6",
+    0.064
+   ]
+  ]
+ },
+ {
+  "code": "nr",
+  "name": "Nauru",
+  "name_fr": "Nauru",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Yaren",
+  "center": [
+   166.9167,
+   -0.5333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.872
+   ],
+   [
+    "#bf9d3b",
+    0.05
+   ],
+   [
+    "#ffc72c",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "np",
+  "name": "Nepal",
+  "name_fr": "Népal",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Kathmandu",
+  "center": [
+   85.3147,
+   27.7186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#47704c",
+    0.414
+   ],
+   [
+    "#dc143c",
+    0.345
+   ],
+   [
+    "#023791",
+    0.143
+   ],
+   [
+    "#fef8f9",
+    0.073
+   ]
+  ]
+ },
+ {
+  "code": "nl",
+  "name": "Netherlands",
+  "name_fr": "Pays-Bas",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Amsterdam",
+  "center": [
+   4.9147,
+   52.3519
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ae1c28",
+    0.321
+   ],
+   [
+    "#ffffff",
+    0.321
+   ],
+   [
+    "#21468b",
+    0.321
+   ]
+  ]
+ },
+ {
+  "code": "nc",
+  "name": "New Caledonia",
+  "name_fr": "Nouvelle-Calédonie",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Nouméa",
+  "center": [
+   165.5,
+   -21.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0035ac",
+    0.316
+   ],
+   [
+    "#009542",
+    0.289
+   ],
+   [
+    "#ed4134",
+    0.202
+   ],
+   [
+    "#f8e400",
+    0.13
+   ]
+  ]
+ },
+ {
+  "code": "nz",
+  "name": "New Zealand",
+  "name_fr": "Nouvelle-Zélande",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Wellington",
+  "center": [
+   174.7833,
+   -41.3
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#012169",
+    0.792
+   ],
+   [
+    "#c8102e",
+    0.081
+   ],
+   [
+    "#fbf5f6",
+    0.065
+   ],
+   [
+    "#4d6396",
+    0.023
+   ]
+  ]
+ },
+ {
+  "code": "ni",
+  "name": "Nicaragua",
+  "name_fr": "Nicaragua",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Managua",
+  "center": [
+   -86.2704,
+   12.155
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#0067c6",
+    0.67
+   ],
+   [
+    "#fefefd",
+    0.316
+   ]
+  ]
+ },
+ {
+  "code": "ne",
+  "name": "Niger",
+  "name_fr": "Niger",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Niamey",
+  "center": [
+   2.1147,
+   13.5187
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#e05206",
+    0.384
+   ],
+   [
+    "#0db02b",
+    0.333
+   ],
+   [
+    "#fefefe",
+    0.278
+   ]
+  ]
+ },
+ {
+  "code": "ng",
+  "name": "Nigeria",
+  "name_fr": "Nigéria",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Abuja",
+  "center": [
+   7.5314,
+   9.0853
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#008751",
+    0.65
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#55af8b",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "nu",
+  "name": "Niue",
+  "name_fr": "Niue",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Alofi",
+  "center": [
+   -169.8667,
+   -19.0333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fddc00",
+    0.774
+   ],
+   [
+    "#faf2f4",
+    0.066
+   ],
+   [
+    "#02226a",
+    0.056
+   ],
+   [
+    "#c8122d",
+    0.054
+   ]
+  ]
+ },
+ {
+  "code": "nf",
+  "name": "Norfolk Island",
+  "name_fr": "Île Norfolk",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Kingston",
+  "center": [
+   167.95,
+   -29.0333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#007934",
+    0.651
+   ],
+   [
+    "#fdfdfd",
+    0.27
+   ],
+   [
+    "#a3ceb5",
+    0.048
+   ],
+   [
+    "#4da171",
+    0.031
+   ]
+  ]
+ },
+ {
+  "code": "kp",
+  "name": "North Korea",
+  "name_fr": "Corée du Nord",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Pyongyang",
+  "center": [
+   125.7527,
+   39.0214
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ec1d25",
+    0.537
+   ],
+   [
+    "#034da2",
+    0.3
+   ],
+   [
+    "#fcdcdd",
+    0.094
+   ],
+   [
+    "#427aba",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "mk",
+  "name": "North Macedonia",
+  "name_fr": "Macédoine du Nord",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Skopje",
+  "center": [
+   21.4335,
+   42.0
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d82125",
+    0.635
+   ],
+   [
+    "#f7e82d",
+    0.284
+   ],
+   [
+    "#ec9f2a",
+    0.054
+   ],
+   [
+    "#e25e27",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "mp",
+  "name": "Northern Mariana Islands",
+  "name_fr": "Îles Mariannes du Nord",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Saipan",
+  "center": [
+   145.75,
+   15.2
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0033a0",
+    0.853
+   ],
+   [
+    "#dfdfe3",
+    0.083
+   ],
+   [
+    "#aaa9ac",
+    0.044
+   ]
+  ]
+ },
+ {
+  "code": "no",
+  "name": "Norway",
+  "name_fr": "Norvège",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Oslo",
+  "center": [
+   10.748,
+   59.9186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ba0c2f",
+    0.588
+   ],
+   [
+    "#00205b",
+    0.171
+   ],
+   [
+    "#fffefe",
+    0.15
+   ],
+   [
+    "#cd4f68",
+    0.037
+   ]
+  ]
+ },
+ {
+  "code": "om",
+  "name": "Oman",
+  "name_fr": "Oman",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Muscat",
+  "center": [
+   58.5933,
+   23.6133
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#df1a23",
+    0.514
+   ],
+   [
+    "#fefefe",
+    0.218
+   ],
+   [
+    "#007e3c",
+    0.216
+   ],
+   [
+    "#e85a60",
+    0.028
+   ]
+  ]
+ },
+ {
+  "code": "pk",
+  "name": "Pakistan",
+  "name_fr": "Pakistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Islamabad",
+  "center": [
+   73.1647,
+   33.7019
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00411c",
+    0.678
+   ],
+   [
+    "#fefefe",
+    0.305
+   ]
+  ]
+ },
+ {
+  "code": "pw",
+  "name": "Palau",
+  "name_fr": "Palaos (Palau)",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Melekeok",
+  "center": [
+   134.6265,
+   7.4874
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#0099fe",
+    0.818
+   ],
+   [
+    "#fefe00",
+    0.168
+   ]
+  ]
+ },
+ {
+  "code": "ps",
+  "name": "Palestine",
+  "name_fr": "Palestine",
+  "region": "Asia",
+  "independent": false,
+  "capital": "Ramallah",
+  "center": [
+   35.2,
+   31.9
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#009538",
+    0.295
+   ],
+   [
+    "#000000",
+    0.288
+   ],
+   [
+    "#fefefe",
+    0.214
+   ],
+   [
+    "#ec2e37",
+    0.163
+   ]
+  ]
+ },
+ {
+  "code": "pa",
+  "name": "Panama",
+  "name_fr": "Panama",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Panama City",
+  "center": [
+   -79.535,
+   8.97
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.46
+   ],
+   [
+    "#072357",
+    0.257
+   ],
+   [
+    "#da121a",
+    0.255
+   ]
+  ]
+ },
+ {
+  "code": "pg",
+  "name": "Papua New Guinea",
+  "name_fr": "Papouasie-Nouvelle-Guinée",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Port Moresby",
+  "center": [
+   147.1925,
+   -9.4647
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#010000",
+    0.482
+   ],
+   [
+    "#ce1125",
+    0.438
+   ],
+   [
+    "#fbd015",
+    0.054
+   ]
+  ]
+ },
+ {
+  "code": "py",
+  "name": "Paraguay",
+  "name_fr": "Paraguay",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Asuncion",
+  "center": [
+   -57.6435,
+   -25.2945
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d52b1e",
+    0.321
+   ],
+   [
+    "#0038a8",
+    0.318
+   ],
+   [
+    "#fcfcfc",
+    0.307
+   ],
+   [
+    "#df6056",
+    0.023
+   ]
+  ]
+ },
+ {
+  "code": "pe",
+  "name": "Peru",
+  "name_fr": "Pérou",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Lima",
+  "center": [
+   -77.052,
+   -12.0461
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d91023",
+    0.65
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#e55f6c",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "ph",
+  "name": "Philippines",
+  "name_fr": "Philippines",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Manila",
+  "center": [
+   120.9803,
+   14.6061
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.396
+   ],
+   [
+    "#0038a8",
+    0.389
+   ],
+   [
+    "#fdfcfb",
+    0.161
+   ]
+  ]
+ },
+ {
+  "code": "pn",
+  "name": "Pitcairn Islands",
+  "name_fr": "Îles Pitcairn",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Adamstown",
+  "center": [
+   -130.1,
+   -25.0667
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#002168",
+    0.757
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#f9f2f4",
+    0.068
+   ],
+   [
+    "#296329",
+    0.034
+   ]
+  ]
+ },
+ {
+  "code": "pl",
+  "name": "Poland",
+  "name_fr": "Pologne",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Warsaw",
+  "center": [
+   20.9981,
+   52.2519
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffffff",
+    0.5
+   ],
+   [
+    "#dc143c",
+    0.5
+   ]
+  ]
+ },
+ {
+  "code": "pt",
+  "name": "Portugal",
+  "name_fr": "Portugal",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Lisbon",
+  "center": [
+   -9.1468,
+   38.7247
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fe0000",
+    0.578
+   ],
+   [
+    "#006600",
+    0.338
+   ],
+   [
+    "#d8d700",
+    0.036
+   ]
+  ]
+ },
+ {
+  "code": "pr",
+  "name": "Puerto Rico",
+  "name_fr": "Porto Rico",
+  "region": "Americas",
+  "independent": false,
+  "capital": "San Juan",
+  "center": [
+   -66.5,
+   18.25
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ed0000",
+    0.421
+   ],
+   [
+    "#fefeff",
+    0.262
+   ],
+   [
+    "#0145fe",
+    0.258
+   ],
+   [
+    "#f68080",
+    0.028
+   ]
+  ]
+ },
+ {
+  "code": "qa",
+  "name": "Qatar",
+  "name_fr": "Qatar",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Doha",
+  "center": [
+   51.533,
+   25.2866
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#8a1538",
+    0.658
+   ],
+   [
+    "#fefefe",
+    0.321
+   ]
+  ]
+ },
+ {
+  "code": "ro",
+  "name": "Romania",
+  "name_fr": "Roumanie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Bucharest",
+  "center": [
+   26.098,
+   44.4353
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#002b7f",
+    0.325
+   ],
+   [
+    "#fcd116",
+    0.325
+   ],
+   [
+    "#ce1126",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "ru",
+  "name": "Russia",
+  "name_fr": "Russie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Moscow",
+  "center": [
+   37.6136,
+   55.7541
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffffff",
+    0.321
+   ],
+   [
+    "#0039a6",
+    0.321
+   ],
+   [
+    "#d52b1e",
+    0.321
+   ]
+  ]
+ },
+ {
+  "code": "rw",
+  "name": "Rwanda",
+  "name_fr": "Rwanda",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Kigali",
+  "center": [
+   30.0586,
+   -1.9516
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00a3df",
+    0.462
+   ],
+   [
+    "#20603d",
+    0.245
+   ],
+   [
+    "#fad201",
+    0.226
+   ],
+   [
+    "#79b870",
+    0.029
+   ]
+  ]
+ },
+ {
+  "code": "re",
+  "name": "Réunion",
+  "name_fr": "Réunion",
+  "region": "Africa",
+  "independent": false,
+  "capital": "Saint-Denis",
+  "center": [
+   55.5,
+   -21.15
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#3366fe",
+    0.633
+   ],
+   [
+    "#fe0000",
+    0.245
+   ],
+   [
+    "#f8fa07",
+    0.082
+   ],
+   [
+    "#7296ae",
+    0.03
+   ]
+  ]
+ },
+ {
+  "code": "bl",
+  "name": "Saint Barthélemy",
+  "name_fr": "Saint-Barthélemy",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Gustavia",
+  "center": [
+   -63.4167,
+   18.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fafaf9",
+    0.821
+   ],
+   [
+    "#1653ad",
+    0.045
+   ],
+   [
+    "#cc1025",
+    0.034
+   ],
+   [
+    "#e2c622",
+    0.051
+   ]
+  ]
+ },
+ {
+  "code": "sh",
+  "name": "Saint Helena, Ascension and Tristan da Cunha",
+  "name_fr": "Sainte-Hélène, Ascension et Tristan da Cunha",
+  "region": "Africa",
+  "independent": false,
+  "capital": "Jamestown",
+  "center": [
+   -5.72,
+   -15.95
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012169",
+    0.773
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#f6f0f2",
+    0.072
+   ],
+   [
+    "#546996",
+    0.052
+   ]
+  ]
+ },
+ {
+  "code": "kn",
+  "name": "Saint Kitts and Nevis",
+  "name_fr": "Saint-Christophe-et-Niévès",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Basseterre",
+  "center": [
+   -62.717,
+   17.302
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#010100",
+    0.307
+   ],
+   [
+    "#009738",
+    0.278
+   ],
+   [
+    "#c8102d",
+    0.278
+   ],
+   [
+    "#fccb00",
+    0.098
+   ]
+  ]
+ },
+ {
+  "code": "lc",
+  "name": "Saint Lucia",
+  "name_fr": "Sainte-Lucie",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Castries",
+  "center": [
+   -61.0,
+   14.002
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#66ccfe",
+    0.868
+   ],
+   [
+    "#fbd015",
+    0.06
+   ],
+   [
+    "#070603",
+    0.031
+   ],
+   [
+    "#eff6f8",
+    0.026
+   ]
+  ]
+ },
+ {
+  "code": "mf",
+  "name": "Saint Martin",
+  "name_fr": "Saint-Martin",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Marigot",
+  "center": [
+   -63.95,
+   18.0833
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#002654",
+    0.325
+   ],
+   [
+    "#ffffff",
+    0.325
+   ],
+   [
+    "#ce1126",
+    0.325
+   ]
+  ]
+ },
+ {
+  "code": "pm",
+  "name": "Saint Pierre and Miquelon",
+  "name_fr": "Saint-Pierre-et-Miquelon",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Saint-Pierre",
+  "center": [
+   -56.3333,
+   46.8333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0292c8",
+    0.574
+   ],
+   [
+    "#f7f8f9",
+    0.102
+   ],
+   [
+    "#fece00",
+    0.13
+   ],
+   [
+    "#cb0500",
+    0.065
+   ]
+  ]
+ },
+ {
+  "code": "vc",
+  "name": "Saint Vincent and the Grenadines",
+  "name_fr": "Saint-Vincent-et-les-Grenadines",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Kingstown",
+  "center": [
+   -61.2121,
+   13.1483
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fcd022",
+    0.432
+   ],
+   [
+    "#007c2e",
+    0.304
+   ],
+   [
+    "#002673",
+    0.25
+   ]
+  ]
+ },
+ {
+  "code": "ws",
+  "name": "Samoa",
+  "name_fr": "Samoa",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Apia",
+  "center": [
+   -171.7386,
+   -13.8415
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.751
+   ],
+   [
+    "#002b7f",
+    0.232
+   ]
+  ]
+ },
+ {
+  "code": "sm",
+  "name": "San Marino",
+  "name_fr": "Saint-Marin",
+  "region": "Europe",
+  "independent": true,
+  "capital": "San Marino",
+  "center": [
+   12.4418,
+   43.9361
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.475
+   ],
+   [
+    "#5db5e3",
+    0.435
+   ],
+   [
+    "#586b56",
+    0.04
+   ],
+   [
+    "#927124",
+    0.039
+   ]
+  ]
+ },
+ {
+  "code": "sa",
+  "name": "Saudi Arabia",
+  "name_fr": "Arabie Saoudite",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Riyadh",
+  "center": [
+   46.7708,
+   24.6428
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#005430",
+    0.918
+   ],
+   [
+    "#78a591",
+    0.061
+   ]
+  ]
+ },
+ {
+  "code": "sn",
+  "name": "Senegal",
+  "name_fr": "Sénégal",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Dakar",
+  "center": [
+   -17.4751,
+   14.7178
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00853f",
+    0.343
+   ],
+   [
+    "#e31b23",
+    0.325
+   ],
+   [
+    "#fdef42",
+    0.303
+   ]
+  ]
+ },
+ {
+  "code": "rs",
+  "name": "Serbia",
+  "name_fr": "Serbie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Belgrade",
+  "center": [
+   20.466,
+   44.8206
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#f9f8f9",
+    0.388
+   ],
+   [
+    "#c5353b",
+    0.324
+   ],
+   [
+    "#0c4076",
+    0.237
+   ],
+   [
+    "#d29e9d",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "sc",
+  "name": "Seychelles",
+  "name_fr": "Seychelles",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Victoria",
+  "center": [
+   55.45,
+   -4.6166
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d22730",
+    0.354
+   ],
+   [
+    "#002f6b",
+    0.163
+   ],
+   [
+    "#fdfcfc",
+    0.158
+   ],
+   [
+    "#fdd041",
+    0.154
+   ]
+  ]
+ },
+ {
+  "code": "sl",
+  "name": "Sierra Leone",
+  "name_fr": "Sierra Leone",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Freetown",
+  "center": [
+   -13.2362,
+   8.472
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#1eb53a",
+    0.321
+   ],
+   [
+    "#ffffff",
+    0.321
+   ],
+   [
+    "#0072c6",
+    0.321
+   ]
+  ]
+ },
+ {
+  "code": "sg",
+  "name": "Singapore",
+  "name_fr": "Singapour",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Singapore",
+  "center": [
+   103.8539,
+   1.295
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fffefe",
+    0.513
+   ],
+   [
+    "#ed2939",
+    0.45
+   ],
+   [
+    "#f6939b",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "sx",
+  "name": "Sint Maarten",
+  "name_fr": "Saint-Martin",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Philipsburg",
+  "center": [
+   -63.05,
+   18.0333
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ba0c0c",
+    0.419
+   ],
+   [
+    "#173d89",
+    0.378
+   ],
+   [
+    "#fbfaf9",
+    0.158
+   ]
+  ]
+ },
+ {
+  "code": "sk",
+  "name": "Slovakia",
+  "name_fr": "Slovaquie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Bratislava",
+  "center": [
+   17.117,
+   48.15
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ed1c25",
+    0.367
+   ],
+   [
+    "#fcfbfc",
+    0.332
+   ],
+   [
+    "#0b4ea2",
+    0.254
+   ]
+  ]
+ },
+ {
+  "code": "si",
+  "name": "Slovenia",
+  "name_fr": "Slovénie",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Ljubljana",
+  "center": [
+   14.515,
+   46.0553
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.326
+   ],
+   [
+    "#fefefe",
+    0.313
+   ],
+   [
+    "#0000fe",
+    0.299
+   ],
+   [
+    "#4802b9",
+    0.032
+   ]
+  ]
+ },
+ {
+  "code": "sb",
+  "name": "Solomon Islands",
+  "name_fr": "Îles Salomon",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Honiara",
+  "center": [
+   159.9498,
+   -9.438
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#215b33",
+    0.456
+   ],
+   [
+    "#0152b8",
+    0.413
+   ],
+   [
+    "#fcd116",
+    0.074
+   ],
+   [
+    "#eef3fa",
+    0.022
+   ]
+  ]
+ },
+ {
+  "code": "so",
+  "name": "Somalia",
+  "name_fr": "Somalie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Mogadishu",
+  "center": [
+   45.3647,
+   2.0686
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#418fde",
+    0.952
+   ],
+   [
+    "#ffffff",
+    0.039
+   ]
+  ]
+ },
+ {
+  "code": "za",
+  "name": "South Africa",
+  "name_fr": "Afrique du Sud",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Bloemfontein",
+  "center": [
+   26.2299,
+   -29.12
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#007748",
+    0.317
+   ],
+   [
+    "#001489",
+    0.204
+   ],
+   [
+    "#e03c31",
+    0.201
+   ],
+   [
+    "#fcfcfb",
+    0.106
+   ]
+  ]
+ },
+ {
+  "code": "gs",
+  "name": "South Georgia",
+  "name_fr": "Géorgie du Sud-et-les Îles Sandwich du Sud",
+  "region": "Antarctic",
+  "independent": false,
+  "capital": "King Edward Point",
+  "center": [
+   -37,
+   -54.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012168",
+    0.762
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#f8f4f6",
+    0.07
+   ],
+   [
+    "#506594",
+    0.045
+   ]
+  ]
+ },
+ {
+  "code": "kr",
+  "name": "South Korea",
+  "name_fr": "Corée du Sud",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Seoul",
+  "center": [
+   126.9978,
+   37.5683
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.774
+   ],
+   [
+    "#01479f",
+    0.061
+   ],
+   [
+    "#0a0a0a",
+    0.059
+   ],
+   [
+    "#cd2e3a",
+    0.058
+   ]
+  ]
+ },
+ {
+  "code": "ss",
+  "name": "South Sudan",
+  "name_fr": "Soudan du Sud",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Juba",
+  "center": [
+   30,
+   7
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#00914c",
+    0.271
+   ],
+   [
+    "#000000",
+    0.26
+   ],
+   [
+    "#01b5f0",
+    0.194
+   ],
+   [
+    "#e12028",
+    0.186
+   ]
+  ]
+ },
+ {
+  "code": "es",
+  "name": "Spain",
+  "name_fr": "Espagne",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Madrid",
+  "center": [
+   -3.6853,
+   40.402
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ac1518",
+    0.522
+   ],
+   [
+    "#f7b800",
+    0.448
+   ]
+  ]
+ },
+ {
+  "code": "lk",
+  "name": "Sri Lanka",
+  "name_fr": "Sri Lanka",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Colombo",
+  "center": [
+   79.8578,
+   6.932
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#febd28",
+    0.445
+   ],
+   [
+    "#8c1738",
+    0.295
+   ],
+   [
+    "#00534e",
+    0.1
+   ],
+   [
+    "#e77301",
+    0.1
+   ]
+  ]
+ },
+ {
+  "code": "sd",
+  "name": "Sudan",
+  "name_fr": "Soudan",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Khartoum",
+  "center": [
+   32.5322,
+   15.59
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#000000",
+    0.291
+   ],
+   [
+    "#d21034",
+    0.287
+   ],
+   [
+    "#fdf9fa",
+    0.233
+   ],
+   [
+    "#017028",
+    0.166
+   ]
+  ]
+ },
+ {
+  "code": "sr",
+  "name": "Suriname",
+  "name_fr": "Surinam",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Paramaribo",
+  "center": [
+   -55.167,
+   5.835
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#377e3f",
+    0.377
+   ],
+   [
+    "#b40a2c",
+    0.363
+   ],
+   [
+    "#fdfafa",
+    0.189
+   ],
+   [
+    "#87b28c",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "sj",
+  "name": "Svalbard and Jan Mayen",
+  "name_fr": "Svalbard et Jan Mayen",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Longyearbyen",
+  "center": [
+   20,
+   78
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ba0c2f",
+    0.588
+   ],
+   [
+    "#00205b",
+    0.171
+   ],
+   [
+    "#fffefe",
+    0.15
+   ],
+   [
+    "#cd4f68",
+    0.037
+   ]
+  ]
+ },
+ {
+  "code": "se",
+  "name": "Sweden",
+  "name_fr": "Suède",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Stockholm",
+  "center": [
+   18.0954,
+   59.3527
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#005293",
+    0.7
+   ],
+   [
+    "#fecb00",
+    0.3
+   ]
+  ]
+ },
+ {
+  "code": "ch",
+  "name": "Switzerland",
+  "name_fr": "Suisse",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Bern",
+  "center": [
+   7.467,
+   46.9167
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.79
+   ],
+   [
+    "#ffffff",
+    0.188
+   ],
+   [
+    "#ff8080",
+    0.021
+   ]
+  ]
+ },
+ {
+  "code": "sy",
+  "name": "Syria",
+  "name_fr": "Syrie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Damascus",
+  "center": [
+   36.2981,
+   33.502
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#007a3d",
+    0.324
+   ],
+   [
+    "#000000",
+    0.321
+   ],
+   [
+    "#fefdfd",
+    0.273
+   ],
+   [
+    "#ce1126",
+    0.031
+   ]
+  ]
+ },
+ {
+  "code": "st",
+  "name": "São Tomé and Príncipe",
+  "name_fr": "São Tomé et Príncipe",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Sao Tome",
+  "center": [
+   6.7333,
+   0.3334
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009739",
+    0.514
+   ],
+   [
+    "#fed000",
+    0.284
+   ],
+   [
+    "#ef3340",
+    0.119
+   ],
+   [
+    "#80b41c",
+    0.043
+   ]
+  ]
+ },
+ {
+  "code": "tw",
+  "name": "Taiwan",
+  "name_fr": "Taïwan",
+  "region": "Asia",
+  "independent": false,
+  "capital": "Taipei",
+  "center": [
+   121.5683,
+   25.0358
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fe0000",
+    0.745
+   ],
+   [
+    "#010194",
+    0.202
+   ],
+   [
+    "#f8f8fc",
+    0.022
+   ]
+  ]
+ },
+ {
+  "code": "tj",
+  "name": "Tajikistan",
+  "name_fr": "Tadjikistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Dushanbe",
+  "center": [
+   68.7739,
+   38.56
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fffefe",
+    0.378
+   ],
+   [
+    "#cc0000",
+    0.275
+   ],
+   [
+    "#006600",
+    0.275
+   ],
+   [
+    "#e57f7f",
+    0.025
+   ]
+  ]
+ },
+ {
+  "code": "tz",
+  "name": "Tanzania",
+  "name_fr": "Tanzanie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Dar es Salaam",
+  "center": [
+   39.2664,
+   -6.7981
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#010000",
+    0.303
+   ],
+   [
+    "#1eb539",
+    0.288
+   ],
+   [
+    "#00a3dc",
+    0.288
+   ],
+   [
+    "#f7d017",
+    0.106
+   ]
+  ]
+ },
+ {
+  "code": "th",
+  "name": "Thailand",
+  "name_fr": "Thaïlande",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Bangkok",
+  "center": [
+   100.5147,
+   13.7519
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#2d2a4a",
+    0.321
+   ],
+   [
+    "#a51931",
+    0.34
+   ],
+   [
+    "#f4f5f8",
+    0.302
+   ],
+   [
+    "#b2b2be",
+    0.038
+   ]
+  ]
+ },
+ {
+  "code": "tl",
+  "name": "Timor-Leste",
+  "name_fr": "Timor oriental",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Dili",
+  "center": [
+   125.5795,
+   -8.5594
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#da291c",
+    0.757
+   ],
+   [
+    "#020201",
+    0.144
+   ],
+   [
+    "#fec62b",
+    0.079
+   ]
+  ]
+ },
+ {
+  "code": "tg",
+  "name": "Togo",
+  "name_fr": "Togo",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Lome",
+  "center": [
+   1.2208,
+   6.1339
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#006a4e",
+    0.423
+   ],
+   [
+    "#fecd00",
+    0.298
+   ],
+   [
+    "#d21034",
+    0.185
+   ],
+   [
+    "#40843b",
+    0.033
+   ]
+  ]
+ },
+ {
+  "code": "tk",
+  "name": "Tokelau",
+  "name_fr": "Tokelau",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Fakaofo",
+  "center": [
+   -172,
+   -9
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#012168",
+    0.688
+   ],
+   [
+    "#fed000",
+    0.253
+   ],
+   [
+    "#a59224",
+    0.027
+   ],
+   [
+    "#525947",
+    0.028
+   ]
+  ]
+ },
+ {
+  "code": "to",
+  "name": "Tonga",
+  "name_fr": "Tonga",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Nukualofa",
+  "center": [
+   -175.2206,
+   -21.1385
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c10000",
+    0.818
+   ],
+   [
+    "#ffffff",
+    0.159
+   ]
+  ]
+ },
+ {
+  "code": "tt",
+  "name": "Trinidad and Tobago",
+  "name_fr": "Trinité-et-Tobago",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Port-of-Spain",
+  "center": [
+   -61.517,
+   10.652
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#da1a35",
+    0.686
+   ],
+   [
+    "#020202",
+    0.197
+   ],
+   [
+    "#f9f5f6",
+    0.087
+   ]
+  ]
+ },
+ {
+  "code": "tn",
+  "name": "Tunisia",
+  "name_fr": "Tunisie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Tunis",
+  "center": [
+   10.1797,
+   36.8028
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#e70013",
+    0.892
+   ],
+   [
+    "#fffefe",
+    0.075
+   ]
+  ]
+ },
+ {
+  "code": "tm",
+  "name": "Turkmenistan",
+  "name_fr": "Turkménistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Ashgabat",
+  "center": [
+   58.3833,
+   37.95
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#00843d",
+    0.849
+   ],
+   [
+    "#ab5e30",
+    0.086
+   ],
+   [
+    "#d0282f",
+    0.033
+   ],
+   [
+    "#5e5a35",
+    0.032
+   ]
+  ]
+ },
+ {
+  "code": "tc",
+  "name": "Turks and Caicos Islands",
+  "name_fr": "Îles Turques-et-Caïques",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Cockburn Town",
+  "center": [
+   -71.5833,
+   21.75
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#002868",
+    0.779
+   ],
+   [
+    "#ce1126",
+    0.077
+   ],
+   [
+    "#faf3f4",
+    0.067
+   ],
+   [
+    "#f7cc19",
+    0.022
+   ]
+  ]
+ },
+ {
+  "code": "tv",
+  "name": "Tuvalu",
+  "name_fr": "Tuvalu",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Funafuti",
+  "center": [
+   179.2166,
+   -8.5167
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#009cdd",
+    0.735
+   ],
+   [
+    "#c8102e",
+    0.077
+   ],
+   [
+    "#fbf6f7",
+    0.063
+   ],
+   [
+    "#03226a",
+    0.052
+   ]
+  ]
+ },
+ {
+  "code": "tr",
+  "name": "Türkiye",
+  "name_fr": "Turquie",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Ankara",
+  "center": [
+   32.8624,
+   39.9292
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#e30a17",
+    0.927
+   ],
+   [
+    "#fefefe",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "ug",
+  "name": "Uganda",
+  "name_fr": "Ouganda",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Kampala",
+  "center": [
+   32.5814,
+   0.3186
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fcdc04",
+    0.331
+   ],
+   [
+    "#040400",
+    0.301
+   ],
+   [
+    "#d90300",
+    0.298
+   ],
+   [
+    "#f9f8f8",
+    0.032
+   ]
+  ]
+ },
+ {
+  "code": "ua",
+  "name": "Ukraine",
+  "name_fr": "Ukraine",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Kiev",
+  "center": [
+   30.5147,
+   50.4353
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#005bbb",
+    0.491
+   ],
+   [
+    "#ffd500",
+    0.491
+   ]
+  ]
+ },
+ {
+  "code": "ae",
+  "name": "United Arab Emirates",
+  "name_fr": "Émirats arabes unis",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Abu Dhabi",
+  "center": [
+   54.3666,
+   24.4667
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c8102e",
+    0.25
+   ],
+   [
+    "#00843d",
+    0.244
+   ],
+   [
+    "#000000",
+    0.244
+   ],
+   [
+    "#ffffff",
+    0.225
+   ]
+  ]
+ },
+ {
+  "code": "gb",
+  "name": "United Kingdom",
+  "name_fr": "Royaume-Uni",
+  "region": "Europe",
+  "independent": true,
+  "capital": "London",
+  "center": [
+   -0.1187,
+   51.5019
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#c8102e",
+    0.341
+   ],
+   [
+    "#fefefe",
+    0.254
+   ],
+   [
+    "#012169",
+    0.245
+   ],
+   [
+    "#dbc9d5",
+    0.104
+   ]
+  ]
+ },
+ {
+  "code": "us",
+  "name": "United States",
+  "name_fr": "États-Unis",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Washington, D.C.",
+  "center": [
+   -77.0114,
+   38.9015
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#f9f1f4",
+    0.359
+   ],
+   [
+    "#b31942",
+    0.333
+   ],
+   [
+    "#0a3161",
+    0.165
+   ],
+   [
+    "#d98ca1",
+    0.067
+   ]
+  ]
+ },
+ {
+  "code": "um",
+  "name": "United States Minor Outlying Islands",
+  "name_fr": "Îles mineures éloignées des États-Unis",
+  "region": "Americas",
+  "independent": false,
+  "capital": null,
+  "center": [
+   166.6333,
+   19.3
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#f9f1f4",
+    0.359
+   ],
+   [
+    "#b31942",
+    0.333
+   ],
+   [
+    "#0a3161",
+    0.165
+   ],
+   [
+    "#d98ca1",
+    0.067
+   ]
+  ]
+ },
+ {
+  "code": "vi",
+  "name": "United States Virgin Islands",
+  "name_fr": "Îles Vierges des États-Unis",
+  "region": "Americas",
+  "independent": false,
+  "capital": "Charlotte Amalie",
+  "center": [
+   -64.9333,
+   18.35
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#fcfcfc",
+    0.767
+   ],
+   [
+    "#d7ad34",
+    0.174
+   ],
+   [
+    "#192764",
+    0.025
+   ],
+   [
+    "#0c76af",
+    0.02
+   ]
+  ]
+ },
+ {
+  "code": "uy",
+  "name": "Uruguay",
+  "name_fr": "Uruguay",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Montevideo",
+  "center": [
+   -56.173,
+   -34.8561
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.565
+   ],
+   [
+    "#0038a8",
+    0.307
+   ],
+   [
+    "#bfcde9",
+    0.031
+   ],
+   [
+    "#3f69bd",
+    0.031
+   ]
+  ]
+ },
+ {
+  "code": "uz",
+  "name": "Uzbekistan",
+  "name_fr": "Ouzbékistan",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Tashkent",
+  "center": [
+   69.293,
+   41.3136
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fefefe",
+    0.307
+   ],
+   [
+    "#308738",
+    0.325
+   ],
+   [
+    "#3081f7",
+    0.291
+   ],
+   [
+    "#f68b97",
+    0.05
+   ]
+  ]
+ },
+ {
+  "code": "vu",
+  "name": "Vanuatu",
+  "name_fr": "Vanuatu",
+  "region": "Oceania",
+  "independent": true,
+  "capital": "Port Vila",
+  "center": [
+   168.3166,
+   -17.7334
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#d10f33",
+    0.332
+   ],
+   [
+    "#009543",
+    0.315
+   ],
+   [
+    "#030200",
+    0.23
+   ],
+   [
+    "#fbcd11",
+    0.078
+   ]
+  ]
+ },
+ {
+  "code": "va",
+  "name": "Vatican City",
+  "name_fr": "Cité du Vatican",
+  "region": "Europe",
+  "independent": true,
+  "capital": "Vatican City",
+  "center": [
+   12.4534,
+   41.9033
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#fff200",
+    0.522
+   ],
+   [
+    "#fdfdfd",
+    0.417
+   ],
+   [
+    "#af9b58",
+    0.027
+   ]
+  ]
+ },
+ {
+  "code": "ve",
+  "name": "Venezuela",
+  "name_fr": "Venezuela",
+  "region": "Americas",
+  "independent": true,
+  "capital": "Caracas",
+  "center": [
+   -66.919,
+   10.5029
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ffcc00",
+    0.331
+   ],
+   [
+    "#cf142b",
+    0.34
+   ],
+   [
+    "#00247d",
+    0.297
+   ]
+  ]
+ },
+ {
+  "code": "vn",
+  "name": "Vietnam",
+  "name_fr": "Viêt Nam",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Hanoi",
+  "center": [
+   105.8481,
+   21.0353
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ff0000",
+    0.925
+   ],
+   [
+    "#ffea00",
+    0.059
+   ]
+  ]
+ },
+ {
+  "code": "wf",
+  "name": "Wallis and Futuna",
+  "name_fr": "Wallis-et-Futuna",
+  "region": "Oceania",
+  "independent": false,
+  "capital": "Mata-Utu",
+  "center": [
+   -176.2,
+   -13.3
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#ce1126",
+    0.831
+   ],
+   [
+    "#fdf9fa",
+    0.086
+   ],
+   [
+    "#002654",
+    0.047
+   ]
+  ]
+ },
+ {
+  "code": "eh",
+  "name": "Western Sahara",
+  "name_fr": "Sahara Occidental",
+  "region": "Africa",
+  "independent": false,
+  "capital": "El Aaiún",
+  "center": [
+   -13,
+   24.5
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#00793c",
+    0.298
+   ],
+   [
+    "#000000",
+    0.288
+   ],
+   [
+    "#fefdfd",
+    0.2
+   ],
+   [
+    "#c4111b",
+    0.169
+   ]
+  ]
+ },
+ {
+  "code": "ye",
+  "name": "Yemen",
+  "name_fr": "Yémen",
+  "region": "Asia",
+  "independent": true,
+  "capital": "Sanaa",
+  "center": [
+   44.2046,
+   15.3567
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#ce1126",
+    0.321
+   ],
+   [
+    "#ffffff",
+    0.321
+   ],
+   [
+    "#000000",
+    0.321
+   ]
+  ]
+ },
+ {
+  "code": "zm",
+  "name": "Zambia",
+  "name_fr": "Zambie",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Lusaka",
+  "center": [
+   28.2814,
+   -15.4147
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#198900",
+    0.741
+   ],
+   [
+    "#ef7d00",
+    0.081
+   ],
+   [
+    "#dc1f0f",
+    0.072
+   ],
+   [
+    "#000000",
+    0.072
+   ]
+  ]
+ },
+ {
+  "code": "zw",
+  "name": "Zimbabwe",
+  "name_fr": "Zimbabwe",
+  "region": "Africa",
+  "independent": true,
+  "capital": "Harare",
+  "center": [
+   31.0428,
+   -17.8158
+  ],
+  "zoom": 13.8,
+  "colours": [
+   [
+    "#006300",
+    0.259
+   ],
+   [
+    "#fed100",
+    0.22
+   ],
+   [
+    "#d40101",
+    0.195
+   ],
+   [
+    "#fdfcfc",
+    0.127
+   ]
+  ]
+ },
+ {
+  "code": "ax",
+  "name": "Åland Islands",
+  "name_fr": "Ahvenanmaa",
+  "region": "Europe",
+  "independent": false,
+  "capital": "Mariehamn",
+  "center": [
+   19.9,
+   60.1167
+  ],
+  "zoom": 5.5,
+  "colours": [
+   [
+    "#0064ad",
+    0.554
+   ],
+   [
+    "#fed200",
+    0.213
+   ],
+   [
+    "#da0e15",
+    0.182
+   ],
+   [
+    "#c1b82a",
+    0.031
+   ]
+  ]
+ }
+]
