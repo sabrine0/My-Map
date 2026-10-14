@@ -10,7 +10,7 @@
 $ErrorActionPreference = "Stop"
 Set-Location $PSScriptRoot
 $log = Join-Path $PSScriptRoot "data\update.log"
-function Log($m) { $line = "{0:yyyy-MM-dd HH:mm:ss}  {1}" -f (Get-Date), $m; $line | Tee-Object -FilePath $log -Append }
+function Log($m) { $line = "{0:yyyy-MM-dd HH:mm:ss}  {1}" -f (Get-Date), $m; Write-Host $line; Add-Content -Path $log -Value $line -Encoding UTF8 }
 
 Log "update started"
 
@@ -34,9 +34,13 @@ if (Test-Path $pbf) { Remove-Item $pbf -Force; Log "removed old OSM extract" }
 
 # Build into a temp file, then swap, so a failed build never leaves a broken map.
 Log "building tiles (10-20 min)"
-# (arguments after the service name replace the compose "command", so repeat them all)
-docker compose run --rm build --download --area=morocco --output=/data/morocco.new.mbtiles --force 2>&1 | Tee-Object -FilePath $log -Append | Out-Null
-if ($LASTEXITCODE -ne 0 -or -not (Test-Path "data\morocco.new.mbtiles")) { Log "build FAILED; old tiles kept"; exit 1 }
+# (arguments after the service name replace the compose "command", so repeat them all.)
+# Run through cmd so Planetiler's progress lines on stderr go to the log instead
+# of being treated as PowerShell errors, which would abort this script.
+$buildLog = Join-Path $PSScriptRoot "data\build.log"
+cmd /c "docker compose run --rm build --download --area=morocco --output=/data/morocco.new.mbtiles --force > `"$buildLog`" 2>&1"
+$code = $LASTEXITCODE
+if ($code -ne 0 -or -not (Test-Path "data\morocco.new.mbtiles")) { Log "build FAILED (exit $code); old tiles kept; see data\build.log"; exit 1 }
 Move-Item "data\morocco.new.mbtiles" "data\morocco.mbtiles" -Force
 Log ("new tiles: {0:N0} MB" -f ((Get-Item "data\morocco.mbtiles").Length / 1MB))
 

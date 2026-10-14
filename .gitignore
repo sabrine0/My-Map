@@ -22,3 +22,5 @@ desktop.ini
 *.log
 *.tmp
 playground/exports/
+data/build.log
+data/update.log
