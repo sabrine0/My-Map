@@ -96,6 +96,31 @@ with `docker compose run --rm build` then `docker compose restart tiles`.
 The flat copies of the skins live in `styles/` and are registered in
 `config.json`.
 
+## Keeping the map up to date
+
+OpenStreetMap changes every day. The two parts of this project follow it
+differently:
+
+- **Playground** (`playground/`): the tiles are streamed from OpenFreeMap,
+  which rebuilds the whole planet from OpenStreetMap about once a week.
+  Nothing to do. The page shows the build date bottom-left ("OSM data:
+  11/10/2026"), checks for a newer build every hour, and reloads the tiles by
+  itself when one appears.
+- **Docker tile server** (Morocco, offline): the tile file is a snapshot, so
+  it must be rebuilt. Once:
+
+      .\update-data.ps1
+
+  Automatically, every week (Sunday 03:00 by default; starts Docker Desktop
+  if needed, keeps the old tiles if the build fails, logs to `data\update.log`):
+
+      .\schedule-update.ps1
+      .\schedule-update.ps1 -Day Wednesday -Hour 2    # another time
+      .\schedule-update.ps1 -Remove                   # stop
+
+  Each run downloads the fresh Morocco extract (~200 MB) and takes 10 to 20
+  minutes; the server keeps serving the old tiles until the new file is ready.
+
 ## Layout
 
 ```

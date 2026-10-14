@@ -172,6 +172,7 @@
 
 <div id="bottom">
   <div id="pos" class="pill"></div>
+  <div id="dataDate" class="pill" style="opacity:.85">OSM data: …</div>
   <div id="sunbox" class="pill" title="Time of day: moves the sun, dims the map at night">
     <span>☀</span><input id="sun" type="range" min="0" max="24" step="0.25" value="12"><span id="sunv">12:00</span>
   </div>
@@ -468,6 +469,34 @@ async function poll() {
 }
 loadSkins();
 setInterval(poll, 1000);
+
+// ---- 3c. Fresh map data ------------------------------------------------------
+// The tiles come from OpenFreeMap, which rebuilds the planet from OpenStreetMap
+// about once a week. Its TileJSON names the build in the tile URL
+// (…/planet/20261011_080001_pt/…). Every hour we look; when a newer build is
+// out we reload the sources, so the map updates itself without a page reload.
+const TILEJSON = 'https://tiles.openfreemap.org/planet';
+let dataBuild = null;
+function buildDate(tiles) {
+  const m = /\/(\d{4})(\d{2})(\d{2})_/.exec(tiles || '');
+  return m ? `${m[3]}/${m[2]}/${m[1]}` : null;
+}
+async function checkData(initial) {
+  try {
+    const t = await (await fetch(TILEJSON + '?_=' + Date.now(), { cache: 'no-store' })).json();
+    const build = t.tiles && t.tiles[0];
+    const date = buildDate(build);
+    const el = $('dataDate');
+    if (el && date) { el.textContent = 'OSM data: ' + date; el.title = 'OpenStreetMap data as processed by OpenFreeMap on this date. Checked hourly; the map reloads itself when a newer build is out.'; }
+    if (dataBuild && build !== dataBuild && shownStyle && !inspecting) {
+      map.setStyle(shownStyle);                 // full reload: picks up the new tiles
+      show(true, 'Map data updated to the ' + date + ' build');
+    }
+    dataBuild = build;
+  } catch (e) { /* offline: keep what we have */ }
+}
+checkData(true);
+setInterval(checkData, 60 * 60 * 1000);
 
 // Style errors MapLibre finds while rendering (unknown property, bad filter…)
 map.on('error', e => {
